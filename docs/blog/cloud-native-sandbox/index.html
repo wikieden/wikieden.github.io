@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh"><head>
+  <meta charset="utf-8">
+  <title>Cloud Native Sandbox</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="A standalone Kubernetes and Istio environment with Docker on you own laptop">
+  
+  <meta name="author" content="wikieden">
+  <meta name="generator" content="Hugo 0.80.0" />
+  <!-- multilingual SEO optimizations -->
+  
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="http://wikieden.github.io/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="http://wikieden.github.io/plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="http://wikieden.github.io/plugins/animate/animate.css">
+  
+  <link rel="stylesheet" href="http://wikieden.github.io/plugins/venobox/venobox.css">
+  
+  <link rel="stylesheet" href="http://wikieden.github.io/plugins/themify-icons/themify-icons.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="http://wikieden.github.io/scss/style.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="http://wikieden.github.io/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="http://wikieden.github.io/images/favicon.png" type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+  <img src="http://wikieden.github.io/images/preloader.gif" alt="preloader">
+  
+</div>
+<!-- preloader end -->
+
+<header class="fixed-top header">
+  
+  
+  
+  <div class="navigation w-100 ">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <a class="navbar-brand" href="/"><img class="img-fluid"
+            src="http://wikieden.github.io/images/logo.gif" alt="Laughman&#39;s Voloblog about CloudNative/AR/VR/CV"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://wikieden.github.io">主页</a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="http://wikieden.github.io/blog">blog</a>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                Research
+              </a>
+              <div class="dropdown-menu">
+                
+                <a class="dropdown-item" href="http://wikieden.github.io/AR">AR</a>
+                
+                <a class="dropdown-item" href="http://wikieden.github.io/CV">CV</a>
+                
+                <a class="dropdown-item" href="http://wikieden.github.io/VR">VR</a>
+                
+              </div>
+            </li>
+            
+            
+          </ul>
+
+          
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+	
+<section class="page-title-section overlay" style="background-image: url('/images/backgrounds/page-title.jpg'),url('/images/backgrounds/page-title.jpg');" >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item h2"><a class="text-primary font-secondary" href="http://wikieden.github.io">主页</a></li>
+          <li class="list-inline-item h5"><i class="ti-angle-right text-white"></i></li>
+          <li class="list-inline-item text-white h3 font-secondary">Cloud Native Sandbox</li>
+        </ul>
+        <p class="text-lighten">A standalone Kubernetes and Istio environment with Docker on you own laptop</p>
+      </div>
+    </div>
+  </div>
+</section>
+	
+
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 order-2 order-lg-1">
+        <div class="row">
+          <div class="col-12 mb-4">
+            <img src="/images/banner/sandbox.jpg" alt="blog-thumb" class="img-fluid w-100">
+          </div>
+          <div class="col-12">
+            <ul class="list-inline">
+              <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><span class="font-weight-bold mr-2">Posted by
+                  :</span><a
+                  href="/author/"></a></li>
+
+              <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><span class="font-weight-bold mr-2">日期
+                  :</span>18 Jan, 2019</li>
+
+              <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><span class="font-weight-bold mr-2">Category
+                  :</span><a
+                  href="/categories/open-source"> 
+                  Open Source</a> </li>
+
+            </ul>
+          </div>
+          
+          <div class="col-12 my-4">
+            <div class="border-bottom"></div>
+          </div>
+          
+          <div class="col-12 content">
+            <p>Github: <a href="https://github.com/rootsongjc/cloud-native-sandbox">https://github.com/rootsongjc/cloud-native-sandbox</a></p>
+<p>Cloud Native Sandbox can help you setup a standalone Kubernetes and istio environment with Docker on you own laptop.</p>
+<p>The sandbox integrated with the following components:</p>
+<ul>
+<li>Kubernetes v1.10.3</li>
+<li>Istio v1.0.4</li>
+<li>Kubernetes dashboard v1.8.3</li>
+</ul>
+<h2 id="differences-with-kubernetes-vagrant-centos-cluster">Differences with kubernetes-vagrant-centos-cluster</h2>
+<p>As I have created the <a href="https://github.com/rootsongjc/kubernetes-vagrant-centos-cluster">kubernetes-vagrant-centos-cluster</a> to set up a Kubernetes cluster and istio service mesh with <code>vagrantfile</code> which consists of 1 master(also as node) and 3 nodes, but there is a big problem that it is so high weight and consume resources. So I made this light weight sandbox.</p>
+<p><strong>Features</strong></p>
+<ul>
+<li>No VirtualBox or Vagrantfile  required</li>
+<li>Light weight</li>
+<li>High speed, low drag</li>
+<li>Easy to operate</li>
+</ul>
+<p><strong>Services</strong></p>
+<p>As the sandbox setup, you will get the following services.</p>
+<!-- raw HTML omitted -->
+<p>Record with <a href="https://github.com/nbedos/termtosvg">termtosvg</a>.</p>
+<h2 id="prerequisite">Prerequisite</h2>
+<p>You only need a laptop with Docker Desktop installed and <a href="https://docs.docker.com/docker-for-mac/#kubernetes">Kubernetes enabled</a>.</p>
+<p>Note: Leave enough resources for Docker Desktop. At least 2 CPU, 4G memory.</p>
+<h2 id="install">Install</h2>
+<p>To start the sandbox, you have to run the following steps.</p>
+<h3 id="kubernetes-dashboardoptional">Kubernetes dashboard(Optional)</h3>
+<p>Install Kubernetes dashboard.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl apply -f install/dashbaord/
+</code></pre></div><p>Get the dashboard token.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl -n kube-system describe secret default| awk <span style="color:#e6db74">&#39;$1==&#34;token:&#34;{print $2}&#39;</span>
+</code></pre></div><p>Expose <code>kubernetes-dashboard</code> service.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl -n kube-system get pod -l k8s-app<span style="color:#f92672">=</span>kubernetes-dashboard -o jsonpath<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;{.items[0].metadata.name}&#39;</span>
+</code></pre></div><p>Login to Kubernetes dashboard on <a href="http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login">http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login</a> with the above token.</p>
+<h3 id="istiorequired">Istio(Required)</h3>
+<p>Install istio service mesh with the default add-ons.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Install istio</span>
+kubectl apply -f install/istio/
+</code></pre></div><p>To expose service <code>grafana</code> on <a href="http://localhost:3000">http://localhost:3000</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl -n istio-system port-forward <span style="color:#66d9ef">$(</span>kubectl -n istio-system get pod -l app<span style="color:#f92672">=</span>grafana -o jsonpath<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;{.items[0].metadata.name}&#39;</span><span style="color:#66d9ef">)</span> 3000:3000 &amp;
+</code></pre></div><p>To expose service <code>prometheus</code> on <a href="http://localhost:9090">http://localhost:9090</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl -n istio-system port-forward <span style="color:#66d9ef">$(</span>kubectl -n istio-system get pod -l app<span style="color:#f92672">=</span>prometheus -o jsonpath<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;{.items[0].metadata.name}&#39;</span><span style="color:#66d9ef">)</span> 9090:9090 &amp;
+</code></pre></div><p>To expose service <code>jaeger</code> on <a href="http://localhost:16686">http://localhost:16686</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl -n istio-system port-forward <span style="color:#66d9ef">$(</span>kubectl -n istio-system get pod -l app<span style="color:#f92672">=</span>jaeger -o jsonpath<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;{.items[0].metadata.name}&#39;</span><span style="color:#66d9ef">)</span> 16686:16686 &amp;
+</code></pre></div><p>To expose service <code>servicegraph</code> on <a href="http://localhost:8088/dotviz">http://localhost:8088/dotviz</a>, <a href="http://localhost:8088/force/forcegraph.html">http://localhost:8088/force/forcegraph.html</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl -n istio-system port-forward <span style="color:#66d9ef">$(</span>kubectl -n istio-system get pod -l app<span style="color:#f92672">=</span>servicegraph -o jsonpath<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;{.items[0].metadata.name}&#39;</span><span style="color:#66d9ef">)</span> 8088:8088 &amp;
+</code></pre></div><h3 id="kiali">Kiali</h3>
+<p>Install <a href="https://www.kiali.io/">kiali</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl -n istio-system apply -f install/kiali
+</code></pre></div><p>To expose service <code>kiali</code> on <a href="http://localhost:20001">http://localhost:20001</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl -n istio-system port-forward <span style="color:#66d9ef">$(</span>kubectl -n istio-system get pod -l app<span style="color:#f92672">=</span>kiali -o jsonpath<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;{.items[0].metadata.name}&#39;</span><span style="color:#66d9ef">)</span> 20001:20001 &amp;
+</code></pre></div><h2 id="bookinfo-sample">Bookinfo sample</h2>
+<p>Deploy <a href="https://istio.io/docs/examples/bookinfo/">bookinfo sample</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Enable sidecar auto injection</span>
+kubectl label namespace default istio-injection<span style="color:#f92672">=</span>enabled
+<span style="color:#75715e"># Deploy bookinfo sample</span>
+kubectl -n default apply -f sample/bookinfo
+</code></pre></div><p>Visit <code>productpage</code> on <a href="http://localhost/productpage">http://localhost/productpage</a>.</p>
+<p>Let&rsquo;s generate some loads.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> <span style="color:#f92672">((</span>i<span style="color:#f92672">=</span>0;i&lt;1000;i<span style="color:#f92672">=</span>i+1<span style="color:#f92672">))</span>;<span style="color:#66d9ef">do</span> echo <span style="color:#e6db74">&#34;Step-&gt;</span>$i<span style="color:#e6db74">&#34;</span>;curl http://localhost/productpage;<span style="color:#66d9ef">done</span>
+</code></pre></div><p>You can watch the service status through <a href="http://localhost:3000">http://localhost:3000</a>.</p>
+<h2 id="client-tools">Client tools</h2>
+<p>To operate the applications on Kubernetes, you should install the following tools.</p>
+<p><strong>Required</strong></p>
+<ul>
+<li><a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/">kubectl</a> - Deploy and manage applications on Kubernetes.</li>
+<li><a href="https://istio.io/docs/reference/commands/istioctl/">istioctl</a> - Istio configuration command line utility.</li>
+</ul>
+<p><strong>Optional</strong></p>
+<ul>
+<li><a href="https://github.com/ahmetb/kubectx">kubectx</a>  - Switch faster between clusters and namespaces in kubectl</li>
+<li><a href="https://github.com/jonmosco/kube-ps1">kube-ps1</a> - Kubernetes prompt info for bash and zsh</li>
+</ul>
+
+          </div>
+          
+          
+          <div class="col-12">
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "educenter" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+          
+        </div>
+      </div>
+      <!-- sidebar -->
+<aside class="col-lg-4 order-1 order-lg-2">
+  <!-- categories -->
+  <div class="bg-white mb-5">
+    <h4 class="mb-4">分类</h4>
+    <ul class="list-unstyled">
+      <li class="border-bottom"><a href="/categories/automation-system" class="d-block pb-3 mt-3">Automation system</a></li>
+      <li class="border-bottom"><a href="/categories/cloud-native" class="d-block pb-3 mt-3">Cloud native</a></li>
+      <li class="border-bottom"><a href="/categories/deep-learning" class="d-block pb-3 mt-3">Deep learning</a></li>
+      <li class="border-bottom"><a href="/categories/eco-system" class="d-block pb-3 mt-3">Eco system</a></li>
+      <li class="border-bottom"><a href="/categories/education-system" class="d-block pb-3 mt-3">Education system</a></li>
+      <li class="border-bottom"><a href="/categories/english-learning" class="d-block pb-3 mt-3">English learning</a></li>
+      <li class="border-bottom"><a href="/categories/istio" class="d-block pb-3 mt-3">Istio</a></li>
+      <li class="border-bottom"><a href="/categories/mathmatics-learning" class="d-block pb-3 mt-3">Mathmatics learning</a></li>
+      <li class="border-bottom"><a href="/categories/open-source" class="d-block pb-3 mt-3">Open source</a></li>
+      <li class="border-bottom"><a href="/categories/private" class="d-block pb-3 mt-3">Private</a></li>
+      <li class="border-bottom"><a href="/categories/service-mesh" class="d-block pb-3 mt-3">Service mesh</a></li>
+    </ul>
+  </div>
+  <!-- tags -->
+  <div class="bg-white mb-5">
+    <h4 class="mb-4">标签</h4>
+    <ul class="list-inline tag-list">
+      <li class="list-inline-item mb-2"><a href="/tags/advice">Advice</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/ai">Ai</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/automation">Automation</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/cncf">Cncf</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/eco">Eco</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/education">Education</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/english">English</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/envoy">Envoy</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/iptables">Iptables</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/istio">Istio</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/kubernetes">Kubernetes</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/rules">Rules</a></li>
+    </ul>
+  </div>
+  <!-- latest post -->
+  <div class="bg-white">
+    <h4 class="mb-4">最近更新</h4>
+    <!-- post-item -->
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="http://wikieden.github.io/blog/istio-18-a-virtual-machine-integration-odyssey/"><img class="mr-3 post-thumb-sm" src="http://wikieden.github.io/images/banner/vm.jpg"></a>
+      <div class="media-body">
+        <a href="http://wikieden.github.io/blog/istio-18-a-virtual-machine-integration-odyssey/">
+          <h5 class="mt-0">Istio 1.8: A Virtual Machine Integration Odyssey</h5>
+        </a>
+        23 Jan 2021
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="http://wikieden.github.io/blog/what-is-a-service-mesh/"><img class="mr-3 post-thumb-sm" src="http://wikieden.github.io/images/banner/service-mesh-banner.jpg"></a>
+      <div class="media-body">
+        <a href="http://wikieden.github.io/blog/what-is-a-service-mesh/">
+          <h5 class="mt-0">What is a service mesh?</h5>
+        </a>
+        22 Jan 2021
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="http://wikieden.github.io/blog/istio-1-8-a-smart-dns-proxy-takes-support-for-virtual-machines-a-step-further/"><img class="mr-3 post-thumb-sm" src="http://wikieden.github.io/images/banner/istio18.jpg"></a>
+      <div class="media-body">
+        <a href="http://wikieden.github.io/blog/istio-1-8-a-smart-dns-proxy-takes-support-for-virtual-machines-a-step-further/">
+          <h5 class="mt-0">Istio 1.8: A Smart DNS Proxy Takes Support for Virtual Machines a Step Further</h5>
+        </a>
+        19 Nov 2020
+      </div>
+    </div>
+    
+  </div>
+  
+<div class="bg-white py-5 box-shadow mb-5 sticky-top aside-toc d-none d-sm-block">
+	<h4 class="mb-4">目录</h4>
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#differences-with-kubernetes-vagrant-centos-cluster">Differences with kubernetes-vagrant-centos-cluster</a></li>
+    <li><a href="#prerequisite">Prerequisite</a></li>
+    <li><a href="#install">Install</a>
+      <ul>
+        <li><a href="#kubernetes-dashboardoptional">Kubernetes dashboard(Optional)</a></li>
+        <li><a href="#istiorequired">Istio(Required)</a></li>
+        <li><a href="#kiali">Kiali</a></li>
+      </ul>
+    </li>
+    <li><a href="#bookinfo-sample">Bookinfo sample</a></li>
+    <li><a href="#client-tools">Client tools</a></li>
+  </ul>
+</nav>
+</div>
+</aside>
+<!-- /sidebar -->
+      
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  
+  
+  
+  <div class="footer bg-footer section border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+          
+          <a class="logo-footer" href="/"><img class="img-fluid mb-4" src="http://wikieden.github.io/images/logo.gif" alt="Laughman&#39;s Voloblog about CloudNative/AR/VR/CV"></a>
+          <ul class="list-unstyled">
+            <li class="mb-4"></li>
+            <li class="mb-4"></li>
+            <li class="mb-4"></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5 text-uppercase">company</h4>
+          <ul class="list-unstyled">
+            
+            
+            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/blog">blog</a></li>
+            
+            
+            
+            
+          </ul>
+        </div>
+        
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5 text-uppercase">links</h4>
+          <ul class="list-unstyled">
+            
+          </ul>
+        </div>
+        
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5 text-uppercase">Courses</h4>
+          <ul class="list-unstyled">
+            
+            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/course/course-5/">Algorithm</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/course/course-3/">Artificial Intelligence</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/course/course-4/">JavaScript</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/course/course-2/">Mathematics</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/course/course-1/">Photography</a></li>
+            
+          </ul>
+        </div>
+        
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5 text-uppercase">new notice</h4>
+          <ul class="list-unstyled">
+            
+            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/notice/notice-1/">Teaching Materials and Testing Methods</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/notice/notice-2/">Teaching Materials and Testing Methods</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/notice/notice-3/">Teaching Materials and Testing Methods</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">Copyright © 2021 wikieden， Powered by Hugo</p>
+        </div>
+        <div class="col-sm-5 text-sm-right text-center">
+          <ul class="list-inline">
+            
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-facebook text-primary"></i></a></li>
+            
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-twitter-alt text-primary"></i></a></li>
+            
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li>
+            
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-github text-primary"></i></a></li>
+            
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-linkedin text-primary"></i></a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Google Map API -->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+
+
+<!-- JS Plugins -->
+
+<script src="http://wikieden.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="http://wikieden.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="http://wikieden.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="http://wikieden.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="http://wikieden.github.io/plugins/filterizr/jquery.filterizr.min.js"></script>
+
+<script src="http://wikieden.github.io/plugins/google-map/gmap.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="http://wikieden.github.io/js/script.min.js"></script>
+
+<!-- google analitycs -->
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>private on Educenter | hugo education template</title>
+    <link>http://wikieden.github.io/en/categories/private/</link>
+    <description>Recent content in private on Educenter | hugo education template</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2021 wikiedn</copyright>
+    <lastBuildDate>Mon, 31 Aug 2020 08:27:17 +0800</lastBuildDate><atom:link href="http://wikieden.github.io/en/categories/private/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Beginning - Goodbye Ant, Hello Tetrate</title>
+      <link>http://wikieden.github.io/en/blog/moving-on-from-ant-group/</link>
+      <pubDate>Mon, 31 Aug 2020 08:27:17 +0800</pubDate>
+      
+      <guid>http://wikieden.github.io/en/blog/moving-on-from-ant-group/</guid>
+      <description>Today is my 914th day and also the last day with Ant Group, tomorrow is September 1st, which is usually the day school starts, and everyone at Alibaba is known as &amp;ldquo;classmate&amp;rdquo;, tomorrow I will join Tetrate, and that&amp;rsquo;s kind of starting my new semester!</description>
+    </item>
+    
+  </channel>
+</rss>

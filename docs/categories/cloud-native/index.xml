@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cloud native on Laughman&#39;s Voloblog about CloudNative/AR/VR/CV</title>
+    <link>http://wikieden.github.io/categories/cloud-native/</link>
+    <description>Recent content in cloud native on Laughman&#39;s Voloblog about CloudNative/AR/VR/CV</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>Copyright &amp;copy; 2021 wikieden， Powered by Hugo	</copyright>
+    <lastBuildDate>Sat, 11 Aug 2018 11:37:36 +0800</lastBuildDate><atom:link href="http://wikieden.github.io/categories/cloud-native/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloud Native and me - the past, current and future</title>
+      <link>http://wikieden.github.io/blog/cloud-native-and-me-the-past-current-and-future/</link>
+      <pubDate>Sat, 11 Aug 2018 11:37:36 +0800</pubDate>
+      
+      <guid>http://wikieden.github.io/blog/cloud-native-and-me-the-past-current-and-future/</guid>
+      <description>Today I am honored to announce that I have become a CNCF Ambassador. Here is my story with Cloud Native.</description>
+    </item>
+    
+    <item>
+      <title>High Level Cloud Native From Kevin Hoffman</title>
+      <link>http://wikieden.github.io/blog/high-level-cloud-native-from-kevin-hoffman/</link>
+      <pubDate>Fri, 15 Sep 2017 20:32:47 +0800</pubDate>
+      
+      <guid>http://wikieden.github.io/blog/high-level-cloud-native-from-kevin-hoffman/</guid>
+      <description>Kevin Hoffman(From Capital One, twitter @KevinHoffman) was making a speech on TalkingData T11 Smart Data Summit.
+He addressed that 15 Factors of Cloud Native which based on Heroku&amp;rsquo;s original Twelve-Factor App, but he add more 3 another factors on it.</description>
+    </item>
+    
+  </channel>
+</rss>

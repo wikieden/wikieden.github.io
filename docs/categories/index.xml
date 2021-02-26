@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Laughman&#39;s Voloblog about CloudNative/AR/VR/CV</title>
+    <link>http://wikieden.github.io/categories/</link>
+    <description>Recent content in Categories on Laughman&#39;s Voloblog about CloudNative/AR/VR/CV</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>Copyright &amp;copy; 2021 wikieden， Powered by Hugo	</copyright>
+    <lastBuildDate>Sat, 23 Jan 2021 08:27:17 +0800</lastBuildDate><atom:link href="http://wikieden.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>service mesh</title>
+      <link>http://wikieden.github.io/categories/service-mesh/</link>
+      <pubDate>Sat, 23 Jan 2021 08:27:17 +0800</pubDate>
+      
+      <guid>http://wikieden.github.io/categories/service-mesh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Istio</title>
+      <link>http://wikieden.github.io/categories/istio/</link>
+      <pubDate>Thu, 19 Nov 2020 16:43:27 +0800</pubDate>
+      
+      <guid>http://wikieden.github.io/categories/istio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>private</title>
+      <link>http://wikieden.github.io/categories/private/</link>
+      <pubDate>Mon, 31 Aug 2020 08:27:17 +0800</pubDate>
+      
+      <guid>http://wikieden.github.io/categories/private/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automation System</title>
+      <link>http://wikieden.github.io/categories/automation-system/</link>
+      <pubDate>Sat, 06 Jul 2019 15:27:17 +0600</pubDate>
+      
+      <guid>http://wikieden.github.io/categories/automation-system/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>http://wikieden.github.io/categories/deep-learning/</link>
+      <pubDate>Sat, 06 Jul 2019 15:27:17 +0600</pubDate>
+      
+      <guid>http://wikieden.github.io/categories/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eco System</title>
+      <link>http://wikieden.github.io/categories/eco-system/</link>
+      <pubDate>Sat, 06 Jul 2019 15:27:17 +0600</pubDate>
+      
+      <guid>http://wikieden.github.io/categories/eco-system/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Education System</title>
+      <link>http://wikieden.github.io/categories/education-system/</link>
+      <pubDate>Sat, 06 Jul 2019 15:27:17 +0600</pubDate>
+      
+      <guid>http://wikieden.github.io/categories/education-system/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>English Learning</title>
+      <link>http://wikieden.github.io/categories/english-learning/</link>
+      <pubDate>Sat, 06 Jul 2019 15:27:17 +0600</pubDate>
+      
+      <guid>http://wikieden.github.io/categories/english-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mathmatics Learning</title>
+      <link>http://wikieden.github.io/categories/mathmatics-learning/</link>
+      <pubDate>Sat, 06 Jul 2019 15:27:17 +0600</pubDate>
+      
+      <guid>http://wikieden.github.io/categories/mathmatics-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source</title>
+      <link>http://wikieden.github.io/categories/open-source/</link>
+      <pubDate>Fri, 18 Jan 2019 19:06:14 +0800</pubDate>
+      
+      <guid>http://wikieden.github.io/categories/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud native</title>
+      <link>http://wikieden.github.io/categories/cloud-native/</link>
+      <pubDate>Sat, 11 Aug 2018 11:37:36 +0800</pubDate>
+      
+      <guid>http://wikieden.github.io/categories/cloud-native/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh"><head>
+  <meta charset="utf-8">
+  <title>Istio 1.8: A Smart DNS Proxy Takes Support for Virtual Machines a Step Further</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="WorkloadGroup is a new API object. It is intended to be used with non-Kubernetes workloads like Virtual Machines and is meant to mimic the existing sidecar injection and deployment specification model used for Kubernetes workloads to bootstrap Istio proxies.">
+  
+  <meta name="author" content="wikieden">
+  <meta name="generator" content="Hugo 0.80.0" />
+  <!-- multilingual SEO optimizations -->
+  
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="http://wikieden.github.io/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="http://wikieden.github.io/plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="http://wikieden.github.io/plugins/animate/animate.css">
+  
+  <link rel="stylesheet" href="http://wikieden.github.io/plugins/venobox/venobox.css">
+  
+  <link rel="stylesheet" href="http://wikieden.github.io/plugins/themify-icons/themify-icons.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="http://wikieden.github.io/scss/style.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="http://wikieden.github.io/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="http://wikieden.github.io/images/favicon.png" type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+  <img src="http://wikieden.github.io/images/preloader.gif" alt="preloader">
+  
+</div>
+<!-- preloader end -->
+
+<header class="fixed-top header">
+  
+  
+  
+  <div class="navigation w-100 ">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <a class="navbar-brand" href="/"><img class="img-fluid"
+            src="http://wikieden.github.io/images/logo.gif" alt="Laughman&#39;s Voloblog about CloudNative/AR/VR/CV"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://wikieden.github.io">主页</a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="http://wikieden.github.io/blog">blog</a>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                Research
+              </a>
+              <div class="dropdown-menu">
+                
+                <a class="dropdown-item" href="http://wikieden.github.io/AR">AR</a>
+                
+                <a class="dropdown-item" href="http://wikieden.github.io/CV">CV</a>
+                
+                <a class="dropdown-item" href="http://wikieden.github.io/VR">VR</a>
+                
+              </div>
+            </li>
+            
+            
+          </ul>
+
+          
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+	
+<section class="page-title-section overlay" style="background-image: url('/images/backgrounds/page-title.jpg'),url('/images/backgrounds/page-title.jpg');" >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item h2"><a class="text-primary font-secondary" href="http://wikieden.github.io">主页</a></li>
+          <li class="list-inline-item h5"><i class="ti-angle-right text-white"></i></li>
+          <li class="list-inline-item text-white h3 font-secondary">Istio 1.8: A Smart DNS Proxy Takes Support for Virtual Machines a Step Further</li>
+        </ul>
+        <p class="text-lighten">WorkloadGroup is a new API object. It is intended to be used with non-Kubernetes workloads like Virtual Machines and is meant to mimic the existing sidecar injection and deployment specification model used for Kubernetes workloads to bootstrap Istio proxies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+	
+
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 order-2 order-lg-1">
+        <div class="row">
+          <div class="col-12 mb-4">
+            <img src="/images/banner/istio18.jpg" alt="blog-thumb" class="img-fluid w-100">
+          </div>
+          <div class="col-12">
+            <ul class="list-inline">
+              <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><span class="font-weight-bold mr-2">Posted by
+                  :</span><a
+                  href="/author/"></a></li>
+
+              <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><span class="font-weight-bold mr-2">日期
+                  :</span>19 Nov, 2020</li>
+
+              <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><span class="font-weight-bold mr-2">Category
+                  :</span><a
+                  href="/categories/istio"> 
+                  Istio</a> </li>
+
+            </ul>
+          </div>
+          
+          <div class="col-12 my-4">
+            <div class="border-bottom"></div>
+          </div>
+          
+          <div class="col-12 content">
+            <p>1.8 is the last version of Istio to be released in 2020 and it has the following major updates:</p>
+<ul>
+<li>Supports installation and upgrades using Helm 3.</li>
+<li>Mixer was officially removed.</li>
+<li>Added Istio DNS proxy to transparently intercept DNS queries from applications.</li>
+<li>WorkloadGroup has been added to simplify the integration of virtual machines.</li>
+</ul>
+<p>WorkloadGroup is a new API object. It is intended to be used with non-Kubernetes workloads like Virtual Machines and is meant to mimic the existing sidecar injection and deployment specification model used for Kubernetes workloads to bootstrap Istio proxies.</p>
+<h2 id="installation-and-upgrades">Installation and Upgrades</h2>
+<p>Istio starts to officially support the use of <a href="https://istio.io/latest/docs/setup/install/helm/">Helm</a> v3 for installations and upgrades. In previous versions, the installation was done with the istioctl command-line tool or Operator. With version 1.8, Istio supports in-place and canary upgrades with Helm.</p>
+<h2 id="enhancing-istios-usability">Enhancing Istio’s Usability</h2>
+<p>The istioctl command-line tool has a new bug reporting feature (<a href="https://istio.io/latest/docs/reference/commands/istioctl/#istioctl-bug-report">istioctl bug-report</a>), which can be used to collect debugging information and get cluster status.</p>
+<p>The way to install the <a href="https://istio.io/latest/blog/2020/addon-rework/">add-on</a> has changed: 1.7 istioctl is no longer recommended and has been removed in 1.8, to help solve the problem of add-on lagging upstream and to make it easier to maintain.</p>
+<p>Tetrate is an enterprise service mesh company. Our flagship product, TSB, enables customers to bridge their workloads across bare metal, VMs, K8s, &amp; cloud at the application layer and provide a resilient, feature-rich service mesh fabric powered by Istio, Envoy, and Apache SkyWalking.</p>
+<p>Mixer, the Istio component that had been responsible for policy controls and telemetry collection, has been removed. Its functionalities are now being served by the Envoy proxies. For extensibility, service mesh experts recommend using <a href="https://istio.io/latest/blog/2020/wasm-announce/">WebAssembly</a> (Wasm) to extend Envoy; and you can also try the <a href="https://www.getenvoy.io/reference/getenvoy_extension_toolkit_reference/">GetEnvoy Toolkit</a>, which makes it easier for developers to create Wasm extensions for Envoy. If you still want to use Mixer, you must use version 1.7 or older. Mixer continued receiving bug fixes and security fixes until Istio 1.7. Many features supported by Mixer have alternatives as specified in the <a href="https://tinyurl.com/mixer-deprecation">Mixer Deprecation</a> document, including the <a href="https://github.com/istio/proxy/tree/master/extensions">in-proxy extensions</a> based on the Wasm sandbox API.</p>
+<h2 id="support-for-virtual-machines">Support for Virtual Machines</h2>
+<p>Istio’s recent upgrades have steadily focused on making virtual machines first-class citizens in the mesh. <a href="https://thenewstack.io/how-to-integrate-virtual-machines-into-istio-service-mesh/">Istio 1.7 made progress to support virtual machines</a> and Istio 1.8 adds a <a href="https://istio.io/latest/blog/2020/dns-proxy/">smart DNS proxy</a>, which is an Istio sidecar agent written in Go. The Istio agent on the sidecar will come with a cache that is dynamically programmed by Istiod DNS Proxy. DNS queries from applications are transparently intercepted and served by an Istio proxy in a pod or VM that intelligently responds to DNS query requests, enabling seamless multicluster access from virtual machines to the service mesh.</p>
+<p>Istio 1.8 adds a <a href="https://istio.io/latest/docs/reference/config/networking/workload-group/">WorkloadGroup</a>, which describes a collection of workload instances. It provides a specification that the workload instances can use to bootstrap their proxies, including the metadata and identity. It is only intended to be used with non-k8s workloads like Virtual Machines, and is meant to mimic the existing sidecar injection and deployment specification model used for Kubernetes workloads to bootstrap Istio proxies. Using WorkloadGroups, Istio has started to help automate VM registration with <a href="https://istio.io/latest/docs/setup/install/virtual-machine/#create-files-to-transfer-to-the-virtual-machine">istioctl experimental workload group</a>.</p>
+<p><a href="https://www.tetrate.io/">Tetrate</a>, the enterprise service mesh company, uses these <a href="https://www.tetrate.io/blog/whats-new-in-istio-1-8-dns-proxy-helps-expand-mesh-to-vms-and-multicluster/">VM features</a> extensively in customers’ multicluster deployments, to enable sidecars to resolve DNS for hosts exposed at ingress gateways of all the clusters in a mesh; and to access them over mutual TLS.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>All in all, the Istio team has kept the promise made at the beginning of the year to maintain a regular release cadence of one release every three months since the 1.1 release in 2018, with continuous optimizations in performance and user experience for a seamless experience of brownfield and greenfield apps on Istio. We look forward to more progress from Istio in 2021.</p>
+
+          </div>
+          
+          
+          <div class="col-12">
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "educenter" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+          
+        </div>
+      </div>
+      <!-- sidebar -->
+<aside class="col-lg-4 order-1 order-lg-2">
+  <!-- categories -->
+  <div class="bg-white mb-5">
+    <h4 class="mb-4">分类</h4>
+    <ul class="list-unstyled">
+      <li class="border-bottom"><a href="/categories/automation-system" class="d-block pb-3 mt-3">Automation system</a></li>
+      <li class="border-bottom"><a href="/categories/cloud-native" class="d-block pb-3 mt-3">Cloud native</a></li>
+      <li class="border-bottom"><a href="/categories/deep-learning" class="d-block pb-3 mt-3">Deep learning</a></li>
+      <li class="border-bottom"><a href="/categories/eco-system" class="d-block pb-3 mt-3">Eco system</a></li>
+      <li class="border-bottom"><a href="/categories/education-system" class="d-block pb-3 mt-3">Education system</a></li>
+      <li class="border-bottom"><a href="/categories/english-learning" class="d-block pb-3 mt-3">English learning</a></li>
+      <li class="border-bottom"><a href="/categories/istio" class="d-block pb-3 mt-3">Istio</a></li>
+      <li class="border-bottom"><a href="/categories/mathmatics-learning" class="d-block pb-3 mt-3">Mathmatics learning</a></li>
+      <li class="border-bottom"><a href="/categories/open-source" class="d-block pb-3 mt-3">Open source</a></li>
+      <li class="border-bottom"><a href="/categories/private" class="d-block pb-3 mt-3">Private</a></li>
+      <li class="border-bottom"><a href="/categories/service-mesh" class="d-block pb-3 mt-3">Service mesh</a></li>
+    </ul>
+  </div>
+  <!-- tags -->
+  <div class="bg-white mb-5">
+    <h4 class="mb-4">标签</h4>
+    <ul class="list-inline tag-list">
+      <li class="list-inline-item mb-2"><a href="/tags/advice">Advice</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/ai">Ai</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/automation">Automation</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/cncf">Cncf</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/eco">Eco</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/education">Education</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/english">English</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/envoy">Envoy</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/iptables">Iptables</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/istio">Istio</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/kubernetes">Kubernetes</a></li>
+      <li class="list-inline-item mb-2"><a href="/tags/rules">Rules</a></li>
+    </ul>
+  </div>
+  <!-- latest post -->
+  <div class="bg-white">
+    <h4 class="mb-4">最近更新</h4>
+    <!-- post-item -->
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="http://wikieden.github.io/blog/istio-18-a-virtual-machine-integration-odyssey/"><img class="mr-3 post-thumb-sm" src="http://wikieden.github.io/images/banner/vm.jpg"></a>
+      <div class="media-body">
+        <a href="http://wikieden.github.io/blog/istio-18-a-virtual-machine-integration-odyssey/">
+          <h5 class="mt-0">Istio 1.8: A Virtual Machine Integration Odyssey</h5>
+        </a>
+        23 Jan 2021
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="http://wikieden.github.io/blog/what-is-a-service-mesh/"><img class="mr-3 post-thumb-sm" src="http://wikieden.github.io/images/banner/service-mesh-banner.jpg"></a>
+      <div class="media-body">
+        <a href="http://wikieden.github.io/blog/what-is-a-service-mesh/">
+          <h5 class="mt-0">What is a service mesh?</h5>
+        </a>
+        22 Jan 2021
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="http://wikieden.github.io/blog/istio-1-8-a-smart-dns-proxy-takes-support-for-virtual-machines-a-step-further/"><img class="mr-3 post-thumb-sm" src="http://wikieden.github.io/images/banner/istio18.jpg"></a>
+      <div class="media-body">
+        <a href="http://wikieden.github.io/blog/istio-1-8-a-smart-dns-proxy-takes-support-for-virtual-machines-a-step-further/">
+          <h5 class="mt-0">Istio 1.8: A Smart DNS Proxy Takes Support for Virtual Machines a Step Further</h5>
+        </a>
+        19 Nov 2020
+      </div>
+    </div>
+    
+  </div>
+  
+<div class="bg-white py-5 box-shadow mb-5 sticky-top aside-toc d-none d-sm-block">
+	<h4 class="mb-4">目录</h4>
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#installation-and-upgrades">Installation and Upgrades</a></li>
+    <li><a href="#enhancing-istios-usability">Enhancing Istio’s Usability</a></li>
+    <li><a href="#support-for-virtual-machines">Support for Virtual Machines</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+</div>
+</aside>
+<!-- /sidebar -->
+      
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  
+  
+  
+  <div class="footer bg-footer section border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+          
+          <a class="logo-footer" href="/"><img class="img-fluid mb-4" src="http://wikieden.github.io/images/logo.gif" alt="Laughman&#39;s Voloblog about CloudNative/AR/VR/CV"></a>
+          <ul class="list-unstyled">
+            <li class="mb-4"></li>
+            <li class="mb-4"></li>
+            <li class="mb-4"></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5 text-uppercase">company</h4>
+          <ul class="list-unstyled">
+            
+            
+            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/blog">blog</a></li>
+            
+            
+            
+            
+          </ul>
+        </div>
+        
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5 text-uppercase">links</h4>
+          <ul class="list-unstyled">
+            
+          </ul>
+        </div>
+        
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5 text-uppercase">Courses</h4>
+          <ul class="list-unstyled">
+            
+            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/course/course-5/">Algorithm</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/course/course-3/">Artificial Intelligence</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/course/course-4/">JavaScript</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/course/course-2/">Mathematics</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/course/course-1/">Photography</a></li>
+            
+          </ul>
+        </div>
+        
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5 text-uppercase">new notice</h4>
+          <ul class="list-unstyled">
+            
+            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/notice/notice-1/">Teaching Materials and Testing Methods</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/notice/notice-2/">Teaching Materials and Testing Methods</a></li>
+            
+            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/notice/notice-3/">Teaching Materials and Testing Methods</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">Copyright © 2021 wikieden， Powered by Hugo</p>
+        </div>
+        <div class="col-sm-5 text-sm-right text-center">
+          <ul class="list-inline">
+            
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-facebook text-primary"></i></a></li>
+            
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-twitter-alt text-primary"></i></a></li>
+            
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li>
+            
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-github text-primary"></i></a></li>
+            
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-linkedin text-primary"></i></a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Google Map API -->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+
+
+<!-- JS Plugins -->
+
+<script src="http://wikieden.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="http://wikieden.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="http://wikieden.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="http://wikieden.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="http://wikieden.github.io/plugins/filterizr/jquery.filterizr.min.js"></script>
+
+<script src="http://wikieden.github.io/plugins/google-map/gmap.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="http://wikieden.github.io/js/script.min.js"></script>
+
+<!-- google analitycs -->
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+
+</html>
