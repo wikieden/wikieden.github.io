@@ -3,507 +3,507 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://wikieden.github.io/en/</loc>
+    <loc>https://wikieden.github.io/en/</loc>
     <lastmod>2030-03-09T15:27:17+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://wikieden.github.io/"
+                href="https://wikieden.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wikieden.github.io/en/"
+                href="https://wikieden.github.io/en/"
                 />
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/event/</loc>
+    <loc>https://wikieden.github.io/en/event/</loc>
     <lastmod>2030-03-09T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/event/event-1/</loc>
+    <loc>https://wikieden.github.io/en/event/event-1/</loc>
     <lastmod>2030-03-09T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/event/event-2/</loc>
+    <loc>https://wikieden.github.io/en/event/event-2/</loc>
     <lastmod>2030-03-09T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/event/event-3/</loc>
+    <loc>https://wikieden.github.io/en/event/event-3/</loc>
     <lastmod>2030-03-09T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/event/event-4/</loc>
+    <loc>https://wikieden.github.io/en/event/event-4/</loc>
     <lastmod>2030-03-09T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/event/event-5/</loc>
+    <loc>https://wikieden.github.io/en/event/event-5/</loc>
     <lastmod>2030-03-09T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/event/event-6/</loc>
+    <loc>https://wikieden.github.io/en/event/event-6/</loc>
     <lastmod>2030-03-09T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/categories/</loc>
+    <loc>https://wikieden.github.io/en/categories/</loc>
     <lastmod>2021-01-23T08:27:17+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://wikieden.github.io/categories/"
+                href="https://wikieden.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wikieden.github.io/en/categories/"
+                href="https://wikieden.github.io/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/blog/istio-18-a-virtual-machine-integration-odyssey/</loc>
+    <loc>https://wikieden.github.io/en/blog/istio-18-a-virtual-machine-integration-odyssey/</loc>
     <lastmod>2021-01-23T08:27:17+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/blog/</loc>
+    <loc>https://wikieden.github.io/en/blog/</loc>
     <lastmod>2021-01-23T08:27:17+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://wikieden.github.io/blog/"
+                href="https://wikieden.github.io/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wikieden.github.io/en/blog/"
+                href="https://wikieden.github.io/en/blog/"
                 />
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/categories/service-mesh/</loc>
+    <loc>https://wikieden.github.io/en/categories/service-mesh/</loc>
     <lastmod>2021-01-23T08:27:17+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/blog/what-is-a-service-mesh/</loc>
+    <loc>https://wikieden.github.io/en/blog/what-is-a-service-mesh/</loc>
     <lastmod>2021-01-22T08:27:17+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/categories/istio/</loc>
+    <loc>https://wikieden.github.io/en/categories/istio/</loc>
     <lastmod>2020-11-19T16:43:27+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/blog/istio-1-8-a-smart-dns-proxy-takes-support-for-virtual-machines-a-step-further/</loc>
+    <loc>https://wikieden.github.io/en/blog/istio-1-8-a-smart-dns-proxy-takes-support-for-virtual-machines-a-step-further/</loc>
     <lastmod>2020-11-19T16:43:27+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/blog/how-to-integrate-virtual-machines-into-istio-service-mesh/</loc>
+    <loc>https://wikieden.github.io/en/blog/how-to-integrate-virtual-machines-into-istio-service-mesh/</loc>
     <lastmod>2020-11-02T16:43:27+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/blog/moving-on-from-ant-group/</loc>
+    <loc>https://wikieden.github.io/en/blog/moving-on-from-ant-group/</loc>
     <lastmod>2020-08-31T08:27:17+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/categories/private/</loc>
+    <loc>https://wikieden.github.io/en/categories/private/</loc>
     <lastmod>2020-08-31T08:27:17+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/tags/iptables/</loc>
+    <loc>https://wikieden.github.io/en/tags/iptables/</loc>
     <lastmod>2020-04-27T21:08:59+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/tags/istio/</loc>
+    <loc>https://wikieden.github.io/en/tags/istio/</loc>
     <lastmod>2020-04-27T21:08:59+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/blog/sidecar-injection-iptables-and-traffic-routing/</loc>
+    <loc>https://wikieden.github.io/en/blog/sidecar-injection-iptables-and-traffic-routing/</loc>
     <lastmod>2020-04-27T21:08:59+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/tags/</loc>
+    <loc>https://wikieden.github.io/en/tags/</loc>
     <lastmod>2020-04-27T21:08:59+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://wikieden.github.io/tags/"
+                href="https://wikieden.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wikieden.github.io/en/tags/"
+                href="https://wikieden.github.io/en/tags/"
                 />
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/blog/service-mesh-the-microservices-in-post-kubernetes-era/</loc>
+    <loc>https://wikieden.github.io/en/blog/service-mesh-the-microservices-in-post-kubernetes-era/</loc>
     <lastmod>2020-04-01T11:56:04+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/tags/advice/</loc>
+    <loc>https://wikieden.github.io/en/tags/advice/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/tags/ai/</loc>
+    <loc>https://wikieden.github.io/en/tags/ai/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/course/course-5/</loc>
+    <loc>https://wikieden.github.io/en/course/course-5/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/course/course-3/</loc>
+    <loc>https://wikieden.github.io/en/course/course-3/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/tags/automation/</loc>
+    <loc>https://wikieden.github.io/en/tags/automation/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/categories/automation-system/</loc>
+    <loc>https://wikieden.github.io/en/categories/automation-system/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/categories/deep-learning/</loc>
+    <loc>https://wikieden.github.io/en/categories/deep-learning/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/tags/eco/</loc>
+    <loc>https://wikieden.github.io/en/tags/eco/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/categories/eco-system/</loc>
+    <loc>https://wikieden.github.io/en/categories/eco-system/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/tags/education/</loc>
+    <loc>https://wikieden.github.io/en/tags/education/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/categories/education-system/</loc>
+    <loc>https://wikieden.github.io/en/categories/education-system/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/blog/blog-post-1/</loc>
+    <loc>https://wikieden.github.io/en/blog/blog-post-1/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/blog/blog-post-2/</loc>
+    <loc>https://wikieden.github.io/en/blog/blog-post-2/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/blog/blog-post-3/</loc>
+    <loc>https://wikieden.github.io/en/blog/blog-post-3/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/blog/blog-post-4/</loc>
+    <loc>https://wikieden.github.io/en/blog/blog-post-4/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/blog/blog-post-5/</loc>
+    <loc>https://wikieden.github.io/en/blog/blog-post-5/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/blog/blog-post-6/</loc>
+    <loc>https://wikieden.github.io/en/blog/blog-post-6/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/tags/english/</loc>
+    <loc>https://wikieden.github.io/en/tags/english/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/categories/english-learning/</loc>
+    <loc>https://wikieden.github.io/en/categories/english-learning/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/research/research-1/</loc>
+    <loc>https://wikieden.github.io/en/research/research-1/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/research/research-2/</loc>
+    <loc>https://wikieden.github.io/en/research/research-2/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/research/research-3/</loc>
+    <loc>https://wikieden.github.io/en/research/research-3/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/research/research-4/</loc>
+    <loc>https://wikieden.github.io/en/research/research-4/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/research/research-5/</loc>
+    <loc>https://wikieden.github.io/en/research/research-5/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/research/research-6/</loc>
+    <loc>https://wikieden.github.io/en/research/research-6/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/course/course-4/</loc>
+    <loc>https://wikieden.github.io/en/course/course-4/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/course/course-2/</loc>
+    <loc>https://wikieden.github.io/en/course/course-2/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/categories/mathmatics-learning/</loc>
+    <loc>https://wikieden.github.io/en/categories/mathmatics-learning/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/notice/</loc>
+    <loc>https://wikieden.github.io/en/notice/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/course/</loc>
+    <loc>https://wikieden.github.io/en/course/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/research/</loc>
+    <loc>https://wikieden.github.io/en/research/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/course/course-1/</loc>
+    <loc>https://wikieden.github.io/en/course/course-1/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/tags/rules/</loc>
+    <loc>https://wikieden.github.io/en/tags/rules/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/notice/notice-1/</loc>
+    <loc>https://wikieden.github.io/en/notice/notice-1/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/notice/notice-2/</loc>
+    <loc>https://wikieden.github.io/en/notice/notice-2/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/notice/notice-3/</loc>
+    <loc>https://wikieden.github.io/en/notice/notice-3/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/notice/notice-4/</loc>
+    <loc>https://wikieden.github.io/en/notice/notice-4/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/notice/notice-5/</loc>
+    <loc>https://wikieden.github.io/en/notice/notice-5/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/notice/notice-6/</loc>
+    <loc>https://wikieden.github.io/en/notice/notice-6/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/course/course-6/</loc>
+    <loc>https://wikieden.github.io/en/course/course-6/</loc>
     <lastmod>2019-07-06T15:27:17+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/blog/cloud-native-sandbox/</loc>
+    <loc>https://wikieden.github.io/en/blog/cloud-native-sandbox/</loc>
     <lastmod>2019-01-18T19:06:14+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/tags/kubernetes/</loc>
+    <loc>https://wikieden.github.io/en/tags/kubernetes/</loc>
     <lastmod>2019-01-18T19:06:14+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/categories/open-source/</loc>
+    <loc>https://wikieden.github.io/en/categories/open-source/</loc>
     <lastmod>2019-01-18T19:06:14+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/tags/envoy/</loc>
+    <loc>https://wikieden.github.io/en/tags/envoy/</loc>
     <lastmod>2018-12-27T10:01:22+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/blog/understanding-how-envoy-sidecar-intercept-and-route-traffic-in-istio-service-mesh/</loc>
+    <loc>https://wikieden.github.io/en/blog/understanding-how-envoy-sidecar-intercept-and-route-traffic-in-istio-service-mesh/</loc>
     <lastmod>2018-12-27T10:01:22+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/categories/cloud-native/</loc>
+    <loc>https://wikieden.github.io/en/categories/cloud-native/</loc>
     <lastmod>2018-08-11T11:37:36+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/blog/cloud-native-and-me-the-past-current-and-future/</loc>
+    <loc>https://wikieden.github.io/en/blog/cloud-native-and-me-the-past-current-and-future/</loc>
     <lastmod>2018-08-11T11:37:36+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/tags/cncf/</loc>
+    <loc>https://wikieden.github.io/en/tags/cncf/</loc>
     <lastmod>2018-08-11T11:37:36+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/blog/high-level-cloud-native-from-kevin-hoffman/</loc>
+    <loc>https://wikieden.github.io/en/blog/high-level-cloud-native-from-kevin-hoffman/</loc>
     <lastmod>2017-09-15T20:32:47+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/about/</loc>
+    <loc>https://wikieden.github.io/en/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://wikieden.github.io/about/"
+                href="https://wikieden.github.io/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wikieden.github.io/en/about/"
+                href="https://wikieden.github.io/en/about/"
                 />
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/contact/</loc>
+    <loc>https://wikieden.github.io/en/contact/</loc>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/teacher/alex-rook/</loc>
+    <loc>https://wikieden.github.io/en/teacher/alex-rook/</loc>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/author/</loc>
+    <loc>https://wikieden.github.io/en/author/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://wikieden.github.io/author/"
+                href="https://wikieden.github.io/author/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wikieden.github.io/en/author/"
+                href="https://wikieden.github.io/en/author/"
                 />
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/scholarship/scholarship-1/</loc>
+    <loc>https://wikieden.github.io/en/scholarship/scholarship-1/</loc>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/scholarship/scholarship-2/</loc>
+    <loc>https://wikieden.github.io/en/scholarship/scholarship-2/</loc>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/scholarship/scholarship-3/</loc>
+    <loc>https://wikieden.github.io/en/scholarship/scholarship-3/</loc>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/teacher/clark-malik/</loc>
+    <loc>https://wikieden.github.io/en/teacher/clark-malik/</loc>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/teacher/devid-luis/</loc>
+    <loc>https://wikieden.github.io/en/teacher/devid-luis/</loc>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/teacher/duis-rio/</loc>
+    <loc>https://wikieden.github.io/en/teacher/duis-rio/</loc>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/teacher/jacke-mastio/</loc>
+    <loc>https://wikieden.github.io/en/teacher/jacke-mastio/</loc>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/author/john-doe/</loc>
+    <loc>https://wikieden.github.io/en/author/john-doe/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://wikieden.github.io/author/john-doe/"
+                href="https://wikieden.github.io/author/john-doe/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wikieden.github.io/en/author/john-doe/"
+                href="https://wikieden.github.io/en/author/john-doe/"
                 />
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/author/mark-dinn/</loc>
+    <loc>https://wikieden.github.io/en/author/mark-dinn/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://wikieden.github.io/author/mark-dinn/"
+                href="https://wikieden.github.io/author/mark-dinn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wikieden.github.io/en/author/mark-dinn/"
+                href="https://wikieden.github.io/en/author/mark-dinn/"
                 />
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/teacher/</loc>
+    <loc>https://wikieden.github.io/en/teacher/</loc>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/scholarship/</loc>
+    <loc>https://wikieden.github.io/en/scholarship/</loc>
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/en/teacher/zim-cook/</loc>
+    <loc>https://wikieden.github.io/en/teacher/zim-cook/</loc>
   </url>
   
 </urlset>

@@ -3,114 +3,114 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://wikieden.github.io/about/</loc>
+    <loc>https://wikieden.github.io/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wikieden.github.io/en/about/"
+                href="https://wikieden.github.io/en/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://wikieden.github.io/about/"
+                href="https://wikieden.github.io/about/"
                 />
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/author/</loc>
+    <loc>https://wikieden.github.io/author/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wikieden.github.io/en/author/"
+                href="https://wikieden.github.io/en/author/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://wikieden.github.io/author/"
+                href="https://wikieden.github.io/author/"
                 />
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/categories/</loc>
+    <loc>https://wikieden.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wikieden.github.io/en/categories/"
+                href="https://wikieden.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://wikieden.github.io/categories/"
+                href="https://wikieden.github.io/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/author/john-doe/</loc>
+    <loc>https://wikieden.github.io/author/john-doe/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wikieden.github.io/en/author/john-doe/"
+                href="https://wikieden.github.io/en/author/john-doe/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://wikieden.github.io/author/john-doe/"
+                href="https://wikieden.github.io/author/john-doe/"
                 />
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/blog/</loc>
+    <loc>https://wikieden.github.io/blog/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wikieden.github.io/en/blog/"
+                href="https://wikieden.github.io/en/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://wikieden.github.io/blog/"
+                href="https://wikieden.github.io/blog/"
                 />
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/</loc>
+    <loc>https://wikieden.github.io/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wikieden.github.io/en/"
+                href="https://wikieden.github.io/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://wikieden.github.io/"
+                href="https://wikieden.github.io/"
                 />
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/author/mark-dinn/</loc>
+    <loc>https://wikieden.github.io/author/mark-dinn/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wikieden.github.io/en/author/mark-dinn/"
+                href="https://wikieden.github.io/en/author/mark-dinn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://wikieden.github.io/author/mark-dinn/"
+                href="https://wikieden.github.io/author/mark-dinn/"
                 />
   </url>
   
   <url>
-    <loc>http://wikieden.github.io/tags/</loc>
+    <loc>https://wikieden.github.io/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://wikieden.github.io/en/tags/"
+                href="https://wikieden.github.io/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://wikieden.github.io/tags/"
+                href="https://wikieden.github.io/tags/"
                 />
   </url>
   

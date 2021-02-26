@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>service mesh on Laughman&#39;s Voloblog about CloudNative/AR/VR/CV</title>
-    <link>http://wikieden.github.io/en/categories/service-mesh/</link>
+    <link>https://wikieden.github.io/en/categories/service-mesh/</link>
     <description>Recent content in service mesh on Laughman&#39;s Voloblog about CloudNative/AR/VR/CV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2021 wikiedn</copyright>
-    <lastBuildDate>Sat, 23 Jan 2021 08:27:17 +0800</lastBuildDate><atom:link href="http://wikieden.github.io/en/categories/service-mesh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Jan 2021 08:27:17 +0800</lastBuildDate><atom:link href="https://wikieden.github.io/en/categories/service-mesh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Istio 1.8: A Virtual Machine Integration Odyssey</title>
-      <link>http://wikieden.github.io/en/blog/istio-18-a-virtual-machine-integration-odyssey/</link>
+      <link>https://wikieden.github.io/en/blog/istio-18-a-virtual-machine-integration-odyssey/</link>
       <pubDate>Sat, 23 Jan 2021 08:27:17 +0800</pubDate>
       
-      <guid>http://wikieden.github.io/en/blog/istio-18-a-virtual-machine-integration-odyssey/</guid>
+      <guid>https://wikieden.github.io/en/blog/istio-18-a-virtual-machine-integration-odyssey/</guid>
       <description>In this article, I’ll give you an overview of Istio‘s history of virtual machine integration support. In particular, the introduction of the smart DNS proxy and WorkloadGroup in Istio 1.</description>
     </item>
     
     <item>
       <title>What is a service mesh?</title>
-      <link>http://wikieden.github.io/en/blog/what-is-a-service-mesh/</link>
+      <link>https://wikieden.github.io/en/blog/what-is-a-service-mesh/</link>
       <pubDate>Fri, 22 Jan 2021 08:27:17 +0800</pubDate>
       
-      <guid>http://wikieden.github.io/en/blog/what-is-a-service-mesh/</guid>
+      <guid>https://wikieden.github.io/en/blog/what-is-a-service-mesh/</guid>
       <description>A service mesh is a relatively simple concept, consisting of a bunch of network proxies paired with each service in an application, plus a set of task management processes.</description>
     </item>
     
     <item>
       <title>Service Mesh - the Microservices in Post Kubernetes Era</title>
-      <link>http://wikieden.github.io/en/blog/service-mesh-the-microservices-in-post-kubernetes-era/</link>
+      <link>https://wikieden.github.io/en/blog/service-mesh-the-microservices-in-post-kubernetes-era/</link>
       <pubDate>Wed, 01 Apr 2020 11:56:04 +0800</pubDate>
       
-      <guid>http://wikieden.github.io/en/blog/service-mesh-the-microservices-in-post-kubernetes-era/</guid>
+      <guid>https://wikieden.github.io/en/blog/service-mesh-the-microservices-in-post-kubernetes-era/</guid>
       <description>This article is a rework of previously written content and is included in the Istio Handbook of the ServiceMesher community .</description>
     </item>
     
     <item>
       <title>Understanding How Envoy Sidecar Intercept and Route Traffic in Istio Service Mesh</title>
-      <link>http://wikieden.github.io/en/blog/understanding-how-envoy-sidecar-intercept-and-route-traffic-in-istio-service-mesh/</link>
+      <link>https://wikieden.github.io/en/blog/understanding-how-envoy-sidecar-intercept-and-route-traffic-in-istio-service-mesh/</link>
       <pubDate>Thu, 27 Dec 2018 10:01:22 +0800</pubDate>
       
-      <guid>http://wikieden.github.io/en/blog/understanding-how-envoy-sidecar-intercept-and-route-traffic-in-istio-service-mesh/</guid>
+      <guid>https://wikieden.github.io/en/blog/understanding-how-envoy-sidecar-intercept-and-route-traffic-in-istio-service-mesh/</guid>
       <description>This article uses Istio&amp;rsquo;s official bookinfo example to explain how Envoy performs routing forwarding after the traffic entering the Pod and forwarded to Envoy sidecar by iptables, detailing the inbound and outbound processing.</description>
     </item>
     

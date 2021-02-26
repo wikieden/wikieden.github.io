@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>kubernetes on Laughman&#39;s Voloblog about CloudNative/AR/VR/CV</title>
-    <link>http://wikieden.github.io/en/tags/kubernetes/</link>
+    <link>https://wikieden.github.io/en/tags/kubernetes/</link>
     <description>Recent content in kubernetes on Laughman&#39;s Voloblog about CloudNative/AR/VR/CV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2021 wikiedn</copyright>
-    <lastBuildDate>Fri, 18 Jan 2019 19:06:14 +0800</lastBuildDate><atom:link href="http://wikieden.github.io/en/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Jan 2019 19:06:14 +0800</lastBuildDate><atom:link href="https://wikieden.github.io/en/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cloud Native Sandbox</title>
-      <link>http://wikieden.github.io/en/blog/cloud-native-sandbox/</link>
+      <link>https://wikieden.github.io/en/blog/cloud-native-sandbox/</link>
       <pubDate>Fri, 18 Jan 2019 19:06:14 +0800</pubDate>
       
-      <guid>http://wikieden.github.io/en/blog/cloud-native-sandbox/</guid>
+      <guid>https://wikieden.github.io/en/blog/cloud-native-sandbox/</guid>
       <description>Github: https://github.com/rootsongjc/cloud-native-sandbox
 Cloud Native Sandbox can help you setup a standalone Kubernetes and istio environment with Docker on you own laptop.</description>
     </item>
