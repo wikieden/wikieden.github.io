@@ -8,15 +8,9 @@
   <meta name="description"
     content="In this article, I’ll give you an overview of Istio‘s history of virtual machine integration support. In particular, the introduction of the smart DNS proxy and WorkloadGroup in Istio 1.8, which makes virtual machines and containers equivalent at the resource abstraction level.">
   
-  <meta name="author" content="Themefisher">
+  <meta name="author" content="wikieden">
   <meta name="generator" content="Hugo 0.80.0" />
   <!-- multilingual SEO optimizations -->
-  
-  
-  <link rel="alternate" hreflang="zh" href="http://wikieden.github.io/blog/istio-18-a-virtual-machine-integration-odyssey/">
-  
-  <link rel="alternate" hreflang="en" href="http://wikieden.github.io/en/blog/istio-18-a-virtual-machine-integration-odyssey/">
-  
   
 
   <!-- plugins -->
@@ -57,7 +51,7 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark p-0">
         <a class="navbar-brand" href="/en"><img class="img-fluid"
-            src="http://wikieden.github.io/images/logo.png" alt="Educenter | hugo education template"></a>
+            src="http://wikieden.github.io/images/logo.jpg" alt="Laughman&#39;s Voloblog about CloudNative/AR/VR/CV"></a>
         <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
           aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -118,37 +112,6 @@
 
           
           
-          <select class="m-2 border-0" id="select-language" onchange="location = this.value;">
-            
-            
-            
-            
-            
-            
-            
-            
-            <option id="zh" value="http://wikieden.github.io/blog/istio-18-a-virtual-machine-integration-odyssey/">中文</option>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <option id="en" value="http://wikieden.github.io/en/blog/istio-18-a-virtual-machine-integration-odyssey/" selected>En
-            </option>
-            
-            
-            
-            
-          </select>
-          
         </div>
       </nav>
     </div>
@@ -203,7 +166,7 @@
             <div class="border-bottom"></div>
           </div>
           
-          <div class="col-12 mb-5">
+          <div class="col-12 content">
             <p>In this article, I’ll give you an overview of <a href="https://istio.io/">Istio</a>‘s history of virtual machine integration support. In particular, the introduction of the smart DNS proxy and WorkloadGroup in Istio 1.8, which makes virtual machines and containers equivalent at the resource abstraction level.</p>
 <p>I will show you a tumultuous odyssey of Istio’s virtual machine integration. Tetrate, the enterprise service mesh company that made pushing Istio to run everywhere part of its founding mission, has used VM features extensively in customer deployments and has been instrumental in pushing VMs to Istio upstream.</p>
 <h2 id="preface">Preface</h2>
@@ -324,7 +287,7 @@
             return;
         }
         var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "educenter" + '.disqus.com/embed.js';
+        s.src = '//' + "wikieden" + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
@@ -408,8 +371,28 @@
     </div>
     
   </div>
+  
+<div class="bg-white py-5 box-shadow mb-5 sticky-top aside-toc d-none d-sm-block">
+	<h4 class="mb-4"></h4>
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#preface">Preface</a></li>
+    <li><a href="#why-is-virtual-machine-support-important">Why Is Virtual Machine Support Important?</a></li>
+    <li><a href="#istios-history-of-virtual-machine-support">Istio’s History of Virtual Machine Support</a>
+      <ul>
+        <li><a href="#02-istio-mesh-expansion">0.2: Istio Mesh Expansion</a></li>
+        <li><a href="#16-to-17-new-resource-abstractions">1.6 to 1.7: New Resource Abstractions</a></li>
+        <li><a href="#as-of-istio-18--smart-dns-proxy">As of Istio 1.8 — Smart DNS Proxy</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#referenced-resources">Referenced resources</a></li>
+  </ul>
+</nav>
+</div>
 </aside>
 <!-- /sidebar -->
+      
     </div>
   </div>
 </section>
@@ -425,36 +408,11 @@
       <div class="row">
         <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
           
-          <a class="logo-footer" href="/en"><img class="img-fluid mb-4" src="http://wikieden.github.io/images/logo.png" alt="Educenter | hugo education template"></a>
+          <a class="logo-footer" href="/en"><img class="img-fluid mb-4" src="http://wikieden.github.io/images/logo.jpg" alt="Laughman&#39;s Voloblog about CloudNative/AR/VR/CV"></a>
           <ul class="list-unstyled">
-            <li class="mb-4">9567 Turner Trace Apt. BC C3G8A4</li>
             <li class="mb-4"></li>
             <li class="mb-4"></li>
-          </ul>
-        </div>
-        
-        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5 text-uppercase">company</h4>
-          <ul class="list-unstyled">
-            
-            
-            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/en/about">About</a></li>
-            
-            
-            
-            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/en/course">course</a></li>
-            
-            
-            
-            
-            
-            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/en/blog">blog</a></li>
-            
-            
-            
-            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/en/contact">Contact</a></li>
-            
-            
+            <li class="mb-4"></li>
           </ul>
         </div>
         
@@ -471,36 +429,6 @@
             <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/en/scholarship">scholarship</a></li>
             
             <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/en/teacher">teacher</a></li>
-            
-          </ul>
-        </div>
-        
-        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5 text-uppercase">Courses</h4>
-          <ul class="list-unstyled">
-            
-            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/en/course/course-5/">Algorithm</a></li>
-            
-            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/en/course/course-3/">Artificial Intelligence</a></li>
-            
-            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/en/course/course-4/">JavaScript</a></li>
-            
-            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/en/course/course-2/">Mathematics</a></li>
-            
-            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/en/course/course-1/">Photography</a></li>
-            
-          </ul>
-        </div>
-        
-        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5 text-uppercase">new notice</h4>
-          <ul class="list-unstyled">
-            
-            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/en/notice/notice-1/">Teaching Materials and Testing Methods</a></li>
-            
-            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/en/notice/notice-2/">Teaching Materials and Testing Methods</a></li>
-            
-            <li class="mb-3"><a class="text-color" href="http://wikieden.github.io/en/notice/notice-3/">Teaching Materials and Testing Methods</a></li>
             
           </ul>
         </div>

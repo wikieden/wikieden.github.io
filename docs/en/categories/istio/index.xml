@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Istio on Educenter | hugo education template</title>
+    <title>Istio on Laughman&#39;s Voloblog about CloudNative/AR/VR/CV</title>
     <link>http://wikieden.github.io/en/categories/istio/</link>
-    <description>Recent content in Istio on Educenter | hugo education template</description>
+    <description>Recent content in Istio on Laughman&#39;s Voloblog about CloudNative/AR/VR/CV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2021 wikiedn</copyright>
@@ -14,7 +14,8 @@
       <pubDate>Thu, 19 Nov 2020 16:43:27 +0800</pubDate>
       
       <guid>http://wikieden.github.io/en/blog/istio-1-8-a-smart-dns-proxy-takes-support-for-virtual-machines-a-step-further/</guid>
-      <description>1.8 is the last version of Istio to be released in 2020 and it has the following major updates:</description>
+      <description>1.8 is the last version of Istio to be released in 2020 and it has the following major updates:
+ Supports installation and upgrades using Helm 3.</description>
     </item>
     
     <item>
@@ -23,7 +24,7 @@
       <pubDate>Mon, 02 Nov 2020 16:43:27 +0800</pubDate>
       
       <guid>http://wikieden.github.io/en/blog/how-to-integrate-virtual-machines-into-istio-service-mesh/</guid>
-      <description>Istio is a popular service mesh to connect, secure, control, and observe services.</description>
+      <description>Istio is a popular service mesh to connect, secure, control, and observe services. When it was first introduced as open source in 2017, Kubernetes was winning the container orchestration battle and Istio answered the needs of organizations moving to microservices.</description>
     </item>
     
     <item>
@@ -32,7 +33,8 @@
       <pubDate>Mon, 27 Apr 2020 21:08:59 +0800</pubDate>
       
       <guid>http://wikieden.github.io/en/blog/sidecar-injection-iptables-and-traffic-routing/</guid>
-      <description>Based on Istio version 1.5.1, this article will present the following.</description>
+      <description>Based on Istio version 1.5.1, this article will present the following.
+ What is the sidecar pattern and what advantages does it have?</description>
     </item>
     
   </channel>

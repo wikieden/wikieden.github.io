@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>service mesh on Educenter | hugo education template</title>
+    <title>service mesh on Laughman&#39;s Voloblog about CloudNative/AR/VR/CV</title>
     <link>http://wikieden.github.io/en/categories/service-mesh/</link>
-    <description>Recent content in service mesh on Educenter | hugo education template</description>
+    <description>Recent content in service mesh on Laughman&#39;s Voloblog about CloudNative/AR/VR/CV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2021 wikiedn</copyright>
@@ -14,7 +14,7 @@
       <pubDate>Sat, 23 Jan 2021 08:27:17 +0800</pubDate>
       
       <guid>http://wikieden.github.io/en/blog/istio-18-a-virtual-machine-integration-odyssey/</guid>
-      <description>In this article, I’ll give you an overview of Istio‘s history of virtual machine integration support.</description>
+      <description>In this article, I’ll give you an overview of Istio‘s history of virtual machine integration support. In particular, the introduction of the smart DNS proxy and WorkloadGroup in Istio 1.</description>
     </item>
     
     <item>

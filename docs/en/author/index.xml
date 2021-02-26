@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors on Educenter | hugo education template</title>
+    <title>Authors on Laughman&#39;s Voloblog about CloudNative/AR/VR/CV</title>
     <link>http://wikieden.github.io/en/author/</link>
-    <description>Recent content in Authors on Educenter | hugo education template</description>
+    <description>Recent content in Authors on Laughman&#39;s Voloblog about CloudNative/AR/VR/CV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2021 wikiedn</copyright><atom:link href="http://wikieden.github.io/en/author/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://wikieden.github.io/en/author/john-doe/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate augue.</description>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate augue. Duis auctor lacus id vehicula gravida. Nam suscipit vitae purus et laoreet.</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://wikieden.github.io/en/author/mark-dinn/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate augue.</description>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate augue. Duis auctor lacus id vehicula gravida. Nam suscipit vitae purus et laoreet.</description>
     </item>
     
   </channel>
