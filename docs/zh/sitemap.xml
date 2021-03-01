@@ -3,6 +3,81 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://wikieden.github.io/categories/</loc>
+    <lastmod>2019-08-11T11:37:36+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wikieden.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://wikieden.github.io/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://wikieden.github.io/blog/</loc>
+    <lastmod>2019-08-11T11:37:36+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wikieden.github.io/en/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://wikieden.github.io/blog/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://wikieden.github.io/</loc>
+    <lastmod>2019-08-11T11:37:36+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wikieden.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://wikieden.github.io/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://wikieden.github.io/tags/</loc>
+    <lastmod>2019-08-11T11:37:36+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wikieden.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://wikieden.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://wikieden.github.io/tags/volumetric-video/</loc>
+    <lastmod>2019-08-11T11:37:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wikieden.github.io/categories/volumetric_video/</loc>
+    <lastmod>2019-08-11T11:37:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wikieden.github.io/blog/volemtremic_media_2020/</loc>
+    <lastmod>2019-08-11T11:37:36+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wikieden.github.io/about/</loc>
     <xhtml:link
                 rel="alternate"
@@ -31,20 +106,6 @@
   </url>
   
   <url>
-    <loc>https://wikieden.github.io/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wikieden.github.io/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://wikieden.github.io/categories/"
-                />
-  </url>
-  
-  <url>
     <loc>https://wikieden.github.io/author/john-doe/</loc>
     <xhtml:link
                 rel="alternate"
@@ -59,34 +120,6 @@
   </url>
   
   <url>
-    <loc>https://wikieden.github.io/blog/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wikieden.github.io/en/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://wikieden.github.io/blog/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://wikieden.github.io/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wikieden.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://wikieden.github.io/"
-                />
-  </url>
-  
-  <url>
     <loc>https://wikieden.github.io/author/mark-dinn/</loc>
     <xhtml:link
                 rel="alternate"
@@ -97,20 +130,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://wikieden.github.io/author/mark-dinn/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://wikieden.github.io/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wikieden.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://wikieden.github.io/tags/"
                 />
   </url>
   

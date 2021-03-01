@@ -2,19 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cncf on Laughman&#39;s Voloblog about CloudNative/AR/VR/CV</title>
-    <link>http://wikieden.github.io/tags/cncf/</link>
+    <link>https://wikieden.github.io/tags/cncf/</link>
     <description>Recent content in cncf on Laughman&#39;s Voloblog about CloudNative/AR/VR/CV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>Copyright &amp;copy; 2021 wikieden， Powered by Hugo	</copyright>
-    <lastBuildDate>Sat, 11 Aug 2018 11:37:36 +0800</lastBuildDate><atom:link href="http://wikieden.github.io/tags/cncf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Aug 2019 11:37:36 +0800</lastBuildDate><atom:link href="https://wikieden.github.io/tags/cncf/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cloud Native and me - the past, current and future</title>
-      <link>http://wikieden.github.io/blog/cloud-native-and-me-the-past-current-and-future/</link>
-      <pubDate>Sat, 11 Aug 2018 11:37:36 +0800</pubDate>
+      <title>体三维媒体发展现状--未来对媒体的最终形态--体三维全息投影-volumetric hologram引爆消费市场的关键点</title>
+      <link>https://wikieden.github.io/blog/volemtremic_media_2021/</link>
+      <pubDate>Sun, 11 Aug 2019 11:37:36 +0800</pubDate>
       
-      <guid>http://wikieden.github.io/blog/cloud-native-and-me-the-past-current-and-future/</guid>
-      <description>Today I am honored to announce that I have become a CNCF Ambassador. Here is my story with Cloud Native.</description>
+      <guid>https://wikieden.github.io/blog/volemtremic_media_2021/</guid>
+      <description>体三维媒体发展现状&amp;ndash;未来对媒体的最终形态&amp;ndash;体三维全息投影-volumetric hologram引爆消费市场的关键点 体三维全息投影，把真实人物带入沉浸式媒体中。
+ 为什么体三维媒体是这个关键 AR、VR平台最佳的媒体内容形态 如果把体三维全息媒体带入到你的工作中  “我们太需要让我们的用户惊艳的体验了！” 这句话可能很多人经常在会议或者头脑风暴中听到，那么什么才是AR、VR最让人惊艳的体验呢。
+AR/VR内容极大的模糊了虚拟与现实的边界，极大的拓宽了人类对世界认知和学习的方式。
+在很多的工作场景中你需要传递信息或者做出合适的解释给你的客户、员工、股东，但是你又可能没法到场时怎么办？现在基本上都是视频直播或者视频会议，一堆人围着一个小方框看着里面那个会说话的小人。直播博客中基本情况也是如此，大多数时候观众只能看到一个会说话的脑袋。你如何才能从一大堆的内容和频道中脱颖而出，抓住你观众的注意。爆炸性的新闻和独家的特色么？但是事实是在现在媒体过度膨胀的时代，这很难。所有人对这些内容都感到了疲惫和厌倦。一堆小丑在一起耍嘴皮，这就是你想看的东西？
+  “In a busy marketplace, not standing out is the same as being invisible.</description>
     </item>
     
   </channel>
