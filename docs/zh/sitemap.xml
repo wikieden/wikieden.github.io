@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://wikieden.github.io/tags/algrithm/</loc>
+    <lastmod>2019-08-11T11:37:36+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wikieden.github.io/categories/</loc>
     <lastmod>2019-08-11T11:37:36+08:00</lastmod>
     <xhtml:link
@@ -15,6 +20,11 @@
                 hreflang="zh"
                 href="https://wikieden.github.io/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://wikieden.github.io/tags/draco/</loc>
+    <lastmod>2019-08-11T11:37:36+08:00</lastmod>
   </url>
   
   <url>
@@ -73,7 +83,17 @@
   </url>
   
   <url>
-    <loc>https://wikieden.github.io/blog/volemtremic_media_2020/</loc>
+    <loc>https://wikieden.github.io/tags/%E4%BD%93%E4%B8%89%E7%BB%B4%E8%A7%86%E9%A2%91/</loc>
+    <lastmod>2019-08-11T11:37:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wikieden.github.io/blog/volumetric_vod_intro/</loc>
+    <lastmod>2019-08-11T11:37:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wikieden.github.io/blog/volumetric_media_2020/</loc>
     <lastmod>2019-08-11T11:37:36+08:00</lastmod>
   </url>
   
