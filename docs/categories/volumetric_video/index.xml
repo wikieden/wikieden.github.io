@@ -7,11 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>Copyright &amp;copy; 2021 wikieden， Powered by Hugo	</copyright>
-    <lastBuildDate>Sun, 11 Aug 2019 11:37:36 +0800</lastBuildDate><atom:link href="https://wikieden.github.io/categories/volumetric_video/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Feb 2021 11:37:36 +0800</lastBuildDate><atom:link href="https://wikieden.github.io/categories/volumetric_video/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>未来媒体的最终形态--体三维全息投影,引爆AVR消费市场的关键点</title>
+      <link>https://wikieden.github.io/blog/volumetric_media_2020/</link>
+      <pubDate>Thu, 11 Feb 2021 11:37:36 +0800</pubDate>
+      
+      <guid>https://wikieden.github.io/blog/volumetric_media_2020/</guid>
+      <description>体三维媒体发展现状&amp;ndash;未来对媒体的最终形态&amp;ndash;体三维全息投影-volumetric hologram引爆消费市场的关键点 体三维全息投影，把真实人物带入沉浸式媒体中。
+ 为什么体三维媒体是这个关键 AR、VR平台最佳的媒体内容形态 如果把体三维全息媒体带入到你的工作中  “我们太需要让我们的用户惊艳的体验了！” 这句话可能很多人经常在会议或者头脑风暴中听到，那么什么才是AR、VR最让人惊艳的体验呢。
+AR/VR内容极大的模糊了虚拟与现实的边界，极大的拓宽了人类对世界认知和学习的方式。
+在很多的工作场景中你需要传递信息或者做出合适的解释给你的客户、员工、股东，但是你又可能没法到场时怎么办？现在基本上都是视频直播或者视频会议，一堆人围着一个小方框看着里面那个会说话的小人。直播博客中基本情况也是如此，大多数时候观众只能看到一个会说话的脑袋。你如何才能从一大堆的内容和频道中脱颖而出，抓住你观众的注意。爆炸性的新闻和独家的特色么？但是事实是在现在媒体过度膨胀的时代，这很难。所有人对这些内容都感到了疲惫和厌倦。一堆小丑在一起耍嘴皮，这就是你想看的东西？
+  “In a busy marketplace, not standing out is the same as being invisible.</description>
+    </item>
+    
     <item>
       <title>体三维视频在4/5G条件下VOD点播方案介绍</title>
       <link>https://wikieden.github.io/blog/volumetric_vod_intro/</link>
-      <pubDate>Sun, 11 Aug 2019 11:37:36 +0800</pubDate>
+      <pubDate>Tue, 11 Aug 2020 11:37:36 +0800</pubDate>
       
       <guid>https://wikieden.github.io/blog/volumetric_vod_intro/</guid>
       <description>介绍 在CES2019和2020 ComCast和Intel发布了面向未来的网络方案。进来多视角视频和体三维视频的发展也对传输和点播直播技术提出了很多新的要求。
@@ -21,19 +34,6 @@
 第一种算法是Draco来自google，不少游戏工作者会比较熟悉，这个google的开源项目主要关注在空间信息压缩上，地址是https://github.com/google/draco，目前已经提供非常全面的平台支持支持mesh/pc多种类型立体媒体格式。第二种来自HypeVR，使用时间一致性压缩方法，之后将会详细介绍两种算法在编解码上的包括延迟在内特性，还会把HypeVR时间一致性压缩算法关于纹理压缩部分拿出来和常见的JPEG压缩做对比
 HypeVR 由HypeVR [6]开发的Mesha编解码器[6]是一种高质量，专有的，有损的体积视频编解码器，用于存储，流传输和播放具有4K纹理分辨率和60K顶点网格质量的体积视频内容。HypeVR的Mesha编解码器包含两个独立的压缩模块。纹理压缩和网格压缩。纹理压缩通过标准视频编解码器（例如H.264，H.265和VP9）执行，而mesh网格压缩模块通过HypeVR的专有网格序列编解码器[6]进行。该网格编解码器首先将连续的几何属性值量化为离散值。接下来，对网格序列的量化属性中的空间（一帧内）和时间（帧间）冗余进行分析，提取，熵编码并嵌入到专有位流格式中。对于典型的时间相干体积视频（平均由8个帧组成的组），网格压缩率约为14倍。随着时间上一致的帧组长度的增加，网格压缩率成比例地增加[6]。 专有位流支持帧分段，随机关键帧（帧内）查找和时间戳。在设计时还考虑了MPEG兼容性。因此，压缩的纹理和网格序列都可以打包成MPEG容器格式（MP4），以简化体积视频流[6]。对于内容分发，这意味着简单的基于HTTP的服务（由各种云存储服务提供）足以为大众提供体积VoD。 Mesha编解码器正在积极开发中，下一版本的目标是将网格压缩率再提高30％到50％。为实现此目标，将开发用于顶点属性的新帧间预测模型，以更好地捕获帧间冗余。另外，将设计更准确和自适应的概率模型来改善符号编码，并添加速率失真模型以生成不同质量的比特流[6]。
 Google Draco Draco是一种基于Edgebreaker [2，3]压缩方案的矢量量化压缩方法，该方法利用了三角遍历编码[4]的方法。这种方法创建了一个由条带组成的三角形生成树。该算法在广度优先遍历BFS迭代处理它正在编码的网格[4]。它使用向量位置信息本身，以及局部和全局预测变量来“预测”三角形/向量连通性的轨迹，例如三角形如何相互连接[3，5]。由于矢量数据经过压缩和解压缩路径时，编码器和解码器使用相同的公式，因此，理想情况下，当编码或解码时，它们应具有相同的预测遍历模式[3]。 当编码器压缩时，它会预测网格中下一个三角形与前一个三角形相关的方式，并根据其下一个遍历的结果更新其预测模式。解码器实质上是三角形网格的重建，基于相同的预测算法并在编码时创建，关于三角形的连接方式。它以深度优先的顺序访问三角形网格，从而压缩它们，生成一串描述符（每个三角形一个），描述它们的相互连接方式。这样可以通过将新三角形附加到先前重建的三角形上来“重建”整个网格。这些描述符可以由每个三角形2位表示，并被优化为每个三角形1.</description>
-    </item>
-    
-    <item>
-      <title>未来媒体的最终形态--体三维全息投影,引爆AVR消费市场的关键点</title>
-      <link>https://wikieden.github.io/blog/volumetric_media_2020/</link>
-      <pubDate>Sun, 11 Aug 2019 11:37:36 +0800</pubDate>
-      
-      <guid>https://wikieden.github.io/blog/volumetric_media_2020/</guid>
-      <description>体三维媒体发展现状&amp;ndash;未来对媒体的最终形态&amp;ndash;体三维全息投影-volumetric hologram引爆消费市场的关键点 体三维全息投影，把真实人物带入沉浸式媒体中。
- 为什么体三维媒体是这个关键 AR、VR平台最佳的媒体内容形态 如果把体三维全息媒体带入到你的工作中  “我们太需要让我们的用户惊艳的体验了！” 这句话可能很多人经常在会议或者头脑风暴中听到，那么什么才是AR、VR最让人惊艳的体验呢。
-AR/VR内容极大的模糊了虚拟与现实的边界，极大的拓宽了人类对世界认知和学习的方式。
-在很多的工作场景中你需要传递信息或者做出合适的解释给你的客户、员工、股东，但是你又可能没法到场时怎么办？现在基本上都是视频直播或者视频会议，一堆人围着一个小方框看着里面那个会说话的小人。直播博客中基本情况也是如此，大多数时候观众只能看到一个会说话的脑袋。你如何才能从一大堆的内容和频道中脱颖而出，抓住你观众的注意。爆炸性的新闻和独家的特色么？但是事实是在现在媒体过度膨胀的时代，这很难。所有人对这些内容都感到了疲惫和厌倦。一堆小丑在一起耍嘴皮，这就是你想看的东西？
-  “In a busy marketplace, not standing out is the same as being invisible.</description>
     </item>
     
   </channel>
