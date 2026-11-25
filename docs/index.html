@@ -55,36 +55,231 @@ article video{max-width:100%} article blockquote{margin:16px 0;padding:8px 16px;
 article table{border-collapse:collapse;display:block;overflow-x:auto} article th,article td{border:1px solid var(--line);padding:6px 10px}
 article pre{background:var(--code);padding:12px;border-radius:8px;overflow-x:auto}
 footer{max-width:1080px;margin:0 auto;padding:0 16px 40px;color:var(--mute);font-size:13px}
+h2 .eb{display:inline-block;font-size:.55em;font-weight:700;letter-spacing:.12em;color:var(--acc);margin-right:12px;vertical-align:.35em;font-variant-numeric:tabular-nums}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.site{display:grid;grid-template-columns:44px 1fr;gap:4px 12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;color:inherit;text-decoration:none}
+.site .ic{grid-row:span 2;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-weight:700;color:#fff;
+  background:linear-gradient(135deg,var(--acc),color-mix(in srgb,var(--acc) 45%,#000))}
+.site .st{font-weight:600;line-height:1.35} .site .su{display:block;font-weight:400;font-size:12px;color:var(--mute)}
+.site p{grid-column:2;margin:0;font-size:.92em;color:var(--mute)}
+.site:hover{border-color:var(--acc)}
+.cta{margin-top:56px;padding:8px 28px 28px;border-radius:20px;border:1px solid var(--line);
+  background:radial-gradient(80% 120% at 100% 0%,color-mix(in srgb,var(--acc) 18%,transparent),transparent 60%),var(--card)}
+.cta h2{margin-top:24px} .cta ul{columns:2;column-gap:32px;padding-left:1.2em} .cta li{margin:2px 0}
+@media (max-width:720px){.cta{padding:4px 18px 22px} .cta ul{columns:1}}
+.ld{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:0}
+footer.ft{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:24px;border-top:1px solid var(--line);padding-top:32px;margin-top:24px}
+.ft .fb{font-weight:700;font-size:1.2em;color:var(--fg)} .ft p{margin:6px 0 0} .ft .fh{font-weight:600;color:var(--fg);margin-bottom:6px}
+.ft a{display:block;text-decoration:none;margin:3px 0} .ft .fcp{grid-column:1/-1;border-top:1px solid var(--line);padding-top:14px}
+@media (max-width:720px){footer.ft{grid-template-columns:1fr 1fr}}
+
+body{overflow-x:clip}
+header.top{background:color-mix(in srgb,var(--bg) 72%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.hero{position:relative;min-height:min(86vh,760px);display:flex;align-items:center;padding:24px 0 48px;isolation:isolate}
+.hero::before{content:"";position:absolute;z-index:-2;top:-60px;bottom:0;left:50%;width:100vw;transform:translateX(-50%);
+  background:radial-gradient(60% 70% at 72% 45%,color-mix(in srgb,var(--acc) 22%,transparent),transparent 70%),
+             radial-gradient(40% 50% at 15% 85%,color-mix(in srgb,var(--acc) 12%,transparent),transparent 70%)}
+#hero3d{position:absolute;z-index:-1;top:-60px;bottom:0;left:50%;width:100vw;height:calc(100% + 60px);transform:translateX(-50%);display:block}
+.hero-in{max-width:540px;position:relative}
+.hero h1{font-size:clamp(2.6em,7vw,4.4em);line-height:1.05;letter-spacing:-.02em;margin:0 0 10px;
+  background:linear-gradient(120deg,var(--fg) 30%,var(--acc));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .role{font-size:1.25em}
+.stats{display:flex;flex-wrap:wrap;gap:10px 28px;margin:4px 0 22px;padding:0;list-style:none}
+.stats li{font-size:13px;color:var(--mute)} .stats b{display:block;font-size:1.9em;line-height:1.1;color:var(--fg);font-variant-numeric:tabular-nums}
+.chips li{background:color-mix(in srgb,var(--card) 70%,transparent);backdrop-filter:blur(6px)}
+.btn{transition:transform .2s,box-shadow .2s} .btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px color-mix(in srgb,var(--acc) 30%,transparent)}
+.scroll-hint{position:absolute;left:0;bottom:12px;font-size:12px;color:var(--mute);letter-spacing:.1em}
+h2{border-top:0;position:relative;padding-top:0;margin-top:64px}
+h2::after{content:"";display:block;width:48px;height:3px;margin-top:8px;border-radius:3px;background:linear-gradient(90deg,var(--acc),transparent)}
+.card,.proj,.ab,.site{position:relative;background:color-mix(in srgb,var(--card) 78%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s;transform-style:preserve-3d;will-change:transform}
+.card:hover,.proj:hover,.ab:hover,.site:hover{box-shadow:0 18px 40px -18px color-mix(in srgb,var(--acc) 55%,transparent)}
+.card::after,.proj::after,.ab::after,.site::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .25s;
+  background:radial-gradient(300px circle at var(--mx,50%) var(--my,50%),color-mix(in srgb,var(--acc) 18%,transparent),transparent 60%)}
+.card:hover::after,.proj:hover::after,.ab:hover::after,.site:hover::after{opacity:1}
+.rv{opacity:0;transform:translateY(28px) scale(.98);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (max-width:720px){.hero{min-height:auto;padding:0 0 32px;flex-direction:column;align-items:stretch}
+ #hero3d{position:relative;top:0;left:0;transform:none;width:calc(100% + 32px);margin:0 -16px;height:360px}
+ .hero::before{top:0} .scroll-hint{display:none}}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none} .btn,.card,.proj,.ab{transition:none}}
 </style></head><body>
 <header class="top"><div class="in"><a class="brand" href="index.html">wikieden</a>
-<a href="index.html#about">关于我</a><a href="index.html#books">讲义书</a><a href="index.html#projects">项目</a><a href="blog/index.html">文章</a>
+<a href="index.html#about">关于我</a><a href="index.html#books">讲义书</a><a href="index.html#sites">站点</a><a href="index.html#projects">项目</a><a href="blog/index.html">文章</a>
 <a href="index.html#contact">联系</a><a href="https://github.com/wikieden">GitHub</a><span class="prefs" title="字号与主题"><button type="button" data-fs-step="-1" aria-label="字号变小">A−</button><button type="button" data-fs-step="1" aria-label="字号变大">A+</button><select id="ab-theme" aria-label="主题色"><option value="">跟随系统</option><option value="light">浅色</option><option value="dark">深色</option><option value="sepia">米黄护眼</option><option value="green">豆沙绿护眼</option><option value="navy">夜蓝</option></select></span></div></header>
 <main>
-<section class="hero">
+<section class="hero"><canvas id="hero3d" aria-hidden="true"></canvas>
+<div class="hero-in">
 <h1>wikieden</h1>
 <p class="role">Physical AI 研发负责人</p>
 <p class="tag">把 Physical AI 从 0 到 1、再到 ∞ 拆开讲清楚：写图解讲义书，做机器人和 AI 工具。</p>
+<ul class="stats"><li><b>13</b>本讲义书</li><li><b>208</b>章</li><li><b>226</b>个可交互动画</li><li><b>533</b>张复习卡片</li></ul>
 <ul class="chips"><li>VLA 视觉语言动作模型</li><li>世界模型与 WAM</li><li>机器人运控与强化学习</li><li>机器人系统与 ROS 2</li><li>训练系统与 GPU</li><li>AI Agent</li></ul>
 <a class="btn p" href="https://wikieden.github.io/ai-books/">读讲义书 · Physical AI 0-1-♾️</a><a class="btn" href="https://github.com/wikieden">GitHub</a><a class="btn" href="mailto:wikieden@gmail.com">发邮件</a>
+</div>
+<div class="scroll-hint">向下滚动 ↓</div>
 </section>
-<h2 id="about">关于我</h2><h3>技术特长</h3><div class="abg"><div class="ab"><div class="at">具身智能路线与数据闭环</div><ul><li>VLA（Vision-Language-Action：视觉 / 语言 / 动作模型）与世界动作模型（WAM）的技术路线判断和选型</li><li>机器人数据采集设备、数据管线、清洗策展与评测体系</li><li>把数据、训练、真机部署和回流串成一个闭环</li></ul></div><div class="ab"><div class="at">AI Agent 与开发工具</div><ul><li>Agent harness 设计：工具接口、上下文与记忆、约束验证、长程任务</li><li>多智能体分级调度：规划和判断留给主模型，子任务交给能胜任的便宜模型</li><li>用 Rust 写本地开发工具，把 Agent 接进日常研发流程</li></ul></div></div><h3>爱好</h3><div class="abg"><div class="ab"><div class="at">写作与知识分享</div><p>把学过的东西写成图解讲义书：一次讲一个小概念，配动画、代码和复习卡片。</p></div><div class="ab"><div class="at">折腾网络与工具</div><p>代理分流、自建服务、效率工具，能自动化的都想自动化。</p></div><div class="ab"><div class="at">动手做机器人 / 硬件</div><p>桌面机器人和小型硬件项目，从电机、传感器一路玩到 ROS 2。</p></div></div>
-<h2 id="books">讲义书</h2>
+<h2 id="about"><span class="eb">01</span>关于我</h2><h3>技术特长</h3><div class="abg"><div class="ab"><div class="at">具身智能路线与数据闭环</div><ul><li>VLA（Vision-Language-Action：视觉 / 语言 / 动作模型）与世界动作模型（WAM）的技术路线判断和选型</li><li>机器人数据采集设备、数据管线、清洗策展与评测体系</li><li>把数据、训练、真机部署和回流串成一个闭环</li></ul></div><div class="ab"><div class="at">AI Agent 与开发工具</div><ul><li>Agent harness 设计：工具接口、上下文与记忆、约束验证、长程任务</li><li>多智能体分级调度：规划和判断留给主模型，子任务交给能胜任的便宜模型</li><li>用 Rust 写本地开发工具，把 Agent 接进日常研发流程</li></ul></div></div><h3>爱好</h3><div class="abg"><div class="ab"><div class="at">写作与知识分享</div><p>把学过的东西写成图解讲义书：一次讲一个小概念，配动画、代码和复习卡片。</p></div><div class="ab"><div class="at">折腾网络与工具</div><p>代理分流、自建服务、效率工具，能自动化的都想自动化。</p></div><div class="ab"><div class="at">动手做机器人 / 硬件</div><p>桌面机器人和小型硬件项目，从电机、传感器一路玩到 ROS 2。</p></div></div>
+<h2 id="books"><span class="eb">02</span>讲义书</h2>
 <p class="lead">13 本对话式图解讲义：一次讲一个小概念，白话类比 → 公式 → 例子，每章配可交互动画、复习卡片，有代码的章节能在 Colab 里直接跑。合集入口：<a href="https://wikieden.github.io/ai-books/">Physical AI 0-1-♾️</a> · <a href="https://wikieden.github.io/ai-books/glossary.html">全局词汇表</a></p>
 <h3>大模型基础</h3><div class="grid"><a class="card" href="https://wikieden.github.io/transformer-visual/"><img loading="lazy" src="https://wikieden.github.io/ai-books/thumbs/transformer.gif" alt=""><div class="b"><div class="t">从零读懂 Transformer</div><div class="m">24 章 · 24 个动画 · 70 张卡片</div></div></a><a class="card" href="https://wikieden.github.io/beyond-transformer/"><img loading="lazy" src="https://wikieden.github.io/ai-books/thumbs/beyond.gif" alt=""><div class="b"><div class="t">超越 Transformer</div><div class="m">9 章 · 9 个动画 · 19 张卡片</div></div></a></div><h3>训练系统与 GPU</h3><div class="grid"><a class="card" href="https://wikieden.github.io/pytorch-inside-out/"><img loading="lazy" src="https://wikieden.github.io/ai-books/thumbs/pytorch.gif" alt=""><div class="b"><div class="t">PyTorch 从里到外</div><div class="m">36 章 · 36 个动画 · 135 张卡片</div></div></a><a class="card" href="https://wikieden.github.io/cuda-to-tensor-core/"><img loading="lazy" src="https://wikieden.github.io/ai-books/thumbs/cuda.gif" alt=""><div class="b"><div class="t">CUDA 从线程到 Tensor Core</div><div class="m">27 章 · 27 个动画 · 64 张卡片</div></div></a></div><h3>强化学习</h3><div class="grid"><a class="card" href="https://wikieden.github.io/rl-from-scratch/"><img loading="lazy" src="https://wikieden.github.io/ai-books/thumbs/rl.gif" alt=""><div class="b"><div class="t">从零学强化学习</div><div class="m">24 章 · 33 个动画 · 42 张卡片</div></div></a><a class="card" href="https://wikieden.github.io/robot-motion-rl/"><img loading="lazy" src="https://wikieden.github.io/ai-books/thumbs/motion.gif" alt=""><div class="b"><div class="t">机器人运控与强化学习</div><div class="m">18 章 · 18 个动画 · 36 张卡片</div></div></a></div><h3>具身智能</h3><div class="grid"><a class="card" href="https://wikieden.github.io/vla-from-scratch/"><img loading="lazy" src="https://wikieden.github.io/ai-books/thumbs/vla.gif" alt=""><div class="b"><div class="t">VLA 从零到 π0<span class="badge">连载中</span></div><div class="m">14 章 · 19 个动画 · 26 张卡片</div></div></a><a class="card" href="https://wikieden.github.io/world-models-wam/"><img loading="lazy" src="https://wikieden.github.io/ai-books/thumbs/wam.gif" alt=""><div class="b"><div class="t">世界模型与 WAM 流派</div><div class="m">13 章 · 13 个动画 · 14 张卡片</div></div></a><a class="card" href="https://wikieden.github.io/reading-gr00t2/"><img loading="lazy" src="https://wikieden.github.io/ai-books/thumbs/gr00t2.gif" alt=""><div class="b"><div class="t">读懂 GR00T 2</div><div class="m">11 章 · 10 个动画 · 24 张卡片</div></div></a><a class="card" href="https://wikieden.github.io/reading-gemini-robotics/"><img loading="lazy" src="https://wikieden.github.io/ai-books/thumbs/gemini.gif" alt=""><div class="b"><div class="t">读懂 Gemini Robotics<span class="badge">连载中</span></div><div class="m">1 章 · 1 个动画 · 6 张卡片</div></div></a><a class="card" href="https://wikieden.github.io/self-improving-robots/"><img loading="lazy" src="https://wikieden.github.io/ai-books/thumbs/rsi.gif" alt=""><div class="b"><div class="t">RSI 与 WAM/VLA<span class="badge">连载中</span></div><div class="m">1 章 · 1 个动画 · 10 张卡片</div></div></a></div><h3>机器人系统</h3><div class="grid"><a class="card" href="https://wikieden.github.io/robot-architecture/"><img loading="lazy" src="https://wikieden.github.io/ai-books/thumbs/robot.gif" alt=""><div class="b"><div class="t">机器人软硬件架构</div><div class="m">10 章 · 14 个动画 · 40 张卡片</div></div></a><a class="card" href="https://wikieden.github.io/ros2-from-scratch/"><img loading="lazy" src="https://wikieden.github.io/ai-books/thumbs/ros2.gif" alt=""><div class="b"><div class="t">从零学 ROS 2</div><div class="m">20 章 · 21 个动画 · 47 张卡片</div></div></a></div>
-<h2 id="projects">开源项目</h2>
-<h3>机器人与 AI 工具</h3><div class="plist"><div class="proj"><a class="pn" href="https://github.com/wikieden/viden">viden</a><span class="pm">Rust · ★ 88</span><p>用 Rust 重写的本地 Agent 命令行工具，参考 Claude Code 的交互方式</p></div><div class="proj"><a class="pn" href="https://github.com/wikieden/humanoid-robotics-skills">humanoid-robotics-skills</a><span class="pm">Python</span><p>人形机器人开发用的开放 Agent Skills：从遥操作、策略训练到安全验证</p></div><div class="proj"><a class="pn" href="https://github.com/wikieden/hybrid-dispatcher">hybrid-dispatcher</a><span class="pm">TypeScript · ★ 1</span><p>多智能体分级调度：主会话负责规划和判断，子任务交给能胜任的最便宜模型</p></div><div class="proj"><a class="pn" href="https://github.com/wikieden/Soul2Humanoid">Soul2Humanoid</a><span class="pm">Python · ★ 6</span><p>具身大脑技术方案调研</p></div><div class="proj"><a class="pn" href="https://github.com/wikieden/Freedom-To-Chatgpt-Claude-Agent">Freedom-To-Chatgpt-Claude-Agent</a><span class="pm">JavaScript · ★ 1419</span><p>ChatGPT / Claude 提示词与使用指南</p></div><div class="proj"><a class="pn" href="https://github.com/wikieden/cage-setup-skill">cage-setup-skill</a><span class="pm">Python</span><p>Codex skill：安装 Claude-Cage 并配置经过验证的代理链</p></div></div><h3>网络与代理配置</h3><div class="plist"><div class="proj"><a class="pn" href="https://github.com/wikieden/freeroad">freeroad</a><span class="pm">JavaScript · ★ 2</span><p>Shadowrocket / FLClash / Clash Verge Rev 多平台分流配置，AI 工具分流策略</p></div></div>
-<h2 id="posts">文章</h2>
-<p class="lead">新内容都写在讲义书里；这里是早年做体三维视频时写的两篇。</p>
+<h2 id="sites"><span class="eb">03</span>更多站点</h2><p class="lead">讲义合集之外的独立站点：更多讲义、具身知识库、指南与复盘。</p>
+<h3>更多讲义</h3><div class="sgrid"><a class="site" href="https://wikieden.github.io/diffusion-from-scratch/"><span class="ic">从</span><span class="st">从零读懂扩散模型<span class="su">wikieden.github.io/diffusion-from-scratch</span></span><p>DDPM、DDIM、Score SDE、EDM、Flow Matching、CFG、DiT / SD3，一路讲到视频与动作生成</p></a><a class="site" href="https://wikieden.github.io/math-and-eval-stats/"><span class="ic">数</span><span class="st">数学与实验统计<span class="su">wikieden.github.io/math-and-eval-stats</span></span><p>从成功率置信区间、样本量、A/B 判定讲起，再补 Physical AI 用到的数学（连载中）</p></a><a class="site" href="https://wikieden.github.io/ai-infra-from-constraints/"><span class="ic">从</span><span class="st">从约束推导 AI Infra<span class="su">wikieden.github.io/ai-infra-from-constraints</span></span><p>从硬件约束和模型结构出发，量化推导推理与训练系统怎么设计</p></a></div><h3>具身知识库与调研</h3><div class="sgrid"><a class="site" href="https://wikieden.github.io/embodied-brain-wiki/"><span class="ic">具</span><span class="st">具身大脑 Wiki<span class="su">wikieden.github.io/embodied-brain-wiki</span></span><p>从反射型机器人到智能体的全景知识库</p></a><a class="site" href="https://wikieden.github.io/embodied-zoo/"><span class="ic">E</span><span class="st">Embodied Zoo<span class="su">wikieden.github.io/embodied-zoo</span></span><p>具身智能开源项目动物园：13 个研究方向全景追踪</p></a><a class="site" href="https://wikieden.github.io/Soul2Humanoid/"><span class="ic">S</span><span class="st">Soul2Humanoid<span class="su">wikieden.github.io/Soul2Humanoid</span></span><p>具身大脑技术方案调研</p></a></div><h3>指南与复盘</h3><div class="sgrid"><a class="site" href="https://wikieden.github.io/Freedom-To-Chatgpt-Claude-Agent/"><span class="ic">A</span><span class="st">AI 提示词大全<span class="su">wikieden.github.io/Freedom-To-Chatgpt-Claude-Agent</span></span><p>新手友好的 ChatGPT / Claude 提示词与使用指南</p></a><a class="site" href="https://wikieden.github.io/freeroad/"><span class="ic">F</span><span class="st">Freeroad 实践复盘<span class="su">wikieden.github.io/freeroad</span></span><p>多平台代理分流配置的实践记录</p></a></div>
+<h2 id="projects"><span class="eb">04</span>开源项目</h2><p class="lead">只列自己的仓库。</p>
+<h3>具身智能 · Chronotope 具身大脑</h3><div class="plist"><div class="proj"><a class="pn" href="https://github.com/wikieden/tempomem">tempomem</a><span class="pm"><i class="ld" style="background:#3572A5"></i>Python · ★ 3</span><p>Chronotope 的记忆层：把 RGB-D / 点云变成可持久、可查询、LLM 能直接用的 3D 场景图（3D 空间里的 Mem0）</p></div><div class="proj"><a class="pn" href="https://github.com/wikieden/worldsense">worldsense</a><span class="pm"><i class="ld" style="background:#3572A5"></i>Python</span><p>Chronotope 的眼睛：把 RGB(-D) 画面变成世界坐标系下的检测结果，交给记忆层</p></div><div class="proj"><a class="pn" href="https://github.com/wikieden/mindloop">mindloop</a><span class="pm"><i class="ld" style="background:#3572A5"></i>Python</span><p>Chronotope 的大脑：把记忆、推理和感知绑成一个认知循环的 LLM 层</p></div><div class="proj"><a class="pn" href="https://github.com/wikieden/bodylink">bodylink</a><span class="pm"><i class="ld" style="background:#3572A5"></i>Python</span><p>Chronotope 的执行适配层：MockBody、多模型清单与 Genesis 仿真</p></div><div class="proj"><a class="pn" href="https://github.com/wikieden/voicelink">voicelink</a><span class="pm"><i class="ld" style="background:#3572A5"></i>Python</span><p>Chronotope 的耳朵和嘴：语音识别与语音合成</p></div><div class="proj"><a class="pn" href="https://github.com/wikieden/skillforge">skillforge</a><span class="pm"><i class="ld" style="background:#3572A5"></i>Python</span><p>Chronotope 的自学实验室：驱动记忆、眼、脑、身体闭环，让机器人从自己的尝试里学会技能</p></div><div class="proj"><a class="pn" href="https://github.com/wikieden/SpatialRobot">SpatialRobot</a><span class="pm"><i class="ld" style="background:#8b949e"></i>Makefile · ★ 1</span><p>具身大脑工作区：记忆、感知、大脑三个子模块的 uv workspace</p></div></div><h3>具身智能</h3><div class="plist"><div class="proj"><a class="pn" href="https://github.com/wikieden/humanoid-robotics-skills">humanoid-robotics-skills</a><span class="pm"><i class="ld" style="background:#3572A5"></i>Python</span><p>人形机器人开发用的开放 Agent Skills：从遥操作、策略训练到安全验证</p></div><div class="proj"><a class="pn" href="https://github.com/wikieden/Soul2Humanoid">Soul2Humanoid</a><span class="pm"><i class="ld" style="background:#3572A5"></i>Python · ★ 6</span><p>具身大脑技术方案调研</p></div><div class="proj"><a class="pn" href="https://github.com/wikieden/embodied-brain-wiki">embodied-brain-wiki</a><span class="pm">★ 1</span><p>具身大脑知识库：从反射型机器人到智能体的全景</p></div><div class="proj"><a class="pn" href="https://github.com/wikieden/embodied-zoo">embodied-zoo</a><span class="pm">★ 1</span><p>具身智能开源项目动物园：13 个研究方向全景追踪</p></div></div><h3>AI Agent 与开发工具</h3><div class="plist"><div class="proj"><a class="pn" href="https://github.com/wikieden/viden">viden</a><span class="pm"><i class="ld" style="background:#dea584"></i>Rust · ★ 88</span><p>用 Rust 重写的本地 Agent 命令行工具，参考 Claude Code 的交互方式</p></div><div class="proj"><a class="pn" href="https://github.com/wikieden/hybrid-dispatcher">hybrid-dispatcher</a><span class="pm"><i class="ld" style="background:#3178c6"></i>TypeScript · ★ 1</span><p>多智能体分级调度：主会话负责规划和判断，子任务交给能胜任的最便宜模型</p></div><div class="proj"><a class="pn" href="https://github.com/wikieden/vloop">vloop</a><span class="pm"><i class="ld" style="background:#89e051"></i>Shell · ★ 1</span><p>AI 编程 Agent 的三层闭环：计划执行、验收重设计、人工评审，支持 12 种后端</p></div><div class="proj"><a class="pn" href="https://github.com/wikieden/clihub">clihub</a><span class="pm"><i class="ld" style="background:#3178c6"></i>TypeScript · ★ 3</span><p>一条命令装好 Claude Code、Codex、Kiro 等 AI 命令行工具，并管理 skills</p></div><div class="proj"><a class="pn" href="https://github.com/wikieden/cage-setup-skill">cage-setup-skill</a><span class="pm"><i class="ld" style="background:#3572A5"></i>Python</span><p>Codex skill：安装 Claude-Cage 并配置经过验证的代理链</p></div><div class="proj"><a class="pn" href="https://github.com/wikieden/Freedom-To-Chatgpt-Claude-Agent">Freedom-To-Chatgpt-Claude-Agent</a><span class="pm"><i class="ld" style="background:#f1e05a"></i>JavaScript · ★ 1419</span><p>ChatGPT / Claude 提示词与使用指南</p></div></div><h3>网络与代理配置</h3><div class="plist"><div class="proj"><a class="pn" href="https://github.com/wikieden/freeroad">freeroad</a><span class="pm"><i class="ld" style="background:#f1e05a"></i>JavaScript · ★ 2</span><p>Shadowrocket / FLClash / Clash Verge Rev 多平台分流配置，AI 工具分流策略</p></div></div>
+<h2 id="posts"><span class="eb">05</span>文章</h2><p class="lead">新内容都写在讲义书里；这里是早年做体三维视频时写的两篇。</p>
 <ul class="posts"><li><span class="d">2021-02-11</span><a href="blog/volumetric_media_2020/index.html">未来媒体的最终形态：体三维全息投影，引爆 AR / VR 消费市场的关键点</a><p>为什么体三维（volumetric）视频会是 AR / VR 最打动人的内容形态。</p></li><li><span class="d">2019-09-09</span><a href="blog/volumetric_vod_intro/index.html">体三维视频在 4G / 5G 条件下的 VOD 点播方案介绍</a><p>体三维视频从采集到点播的工作流，以及 HypeVR 与 Draco 压缩的对比。</p></li></ul>
-<h2 id="contact">联系与合作</h2><p>欢迎来信：<a href="mailto:wikieden@gmail.com">wikieden@gmail.com</a>。可以合作的方向：</p><ul><li>讲义勘误与建议</li><li>课程 / 企业内训</li><li>内容合作与转载授权</li><li>赞助本系列持续更新</li></ul><p>赞助请发邮件联系。</p>
+<section class="cta"><h2 id="contact"><span class="eb">06</span>联系与合作</h2><p>欢迎来信：<a href="mailto:wikieden@gmail.com">wikieden@gmail.com</a>。可以合作的方向：</p><ul><li>讲义勘误与建议</li><li>课程 / 企业内训</li><li>内容合作与转载授权</li><li>赞助本系列持续更新</li></ul><p>赞助请发邮件联系。</p><a class="btn p" href="mailto:wikieden@gmail.com">写邮件给我</a></section>
 
 </main>
-<footer>© wikieden · 联系与合作：<a href="mailto:wikieden@gmail.com">wikieden@gmail.com</a>（讲义勘误与建议、课程 / 企业内训、内容合作与转载授权）· 赞助请发邮件联系</footer>
+<footer class="ft"><div class="fc"><div class="fb">wikieden</div><p>Physical AI 研发负责人。把 Physical AI 从 0 到 1、再到 ∞ 拆开讲清楚：写图解讲义书，做机器人和 AI 工具。</p></div>
+<div class="fc"><div class="fh">导航</div><a href="index.html#about">关于我</a><a href="index.html#books">讲义书</a><a href="index.html#sites">更多站点</a><a href="index.html#projects">开源项目</a><a href="blog/index.html">文章</a></div>
+<div class="fc"><div class="fh">链接</div><a href="https://wikieden.github.io/ai-books/">Physical AI 0-1-♾️</a><a href="https://wikieden.github.io/ai-books/glossary.html">全局词汇表</a><a href="https://github.com/wikieden">GitHub</a></div>
+<div class="fc"><div class="fh">联系与合作</div><a href="mailto:wikieden@gmail.com">wikieden@gmail.com</a><span>讲义勘误与建议、课程 / 企业内训、内容合作与转载授权、赞助本系列持续更新</span></div>
+<div class="fcp">© 2026 wikieden</div></footer>
 <script>(function(){var d=document.documentElement,K=["s","m","l","xl"];
 function save(k,v){try{v?localStorage.setItem(k,v):localStorage.removeItem(k)}catch(e){}}
 var s=document.getElementById("ab-theme");if(s){s.value=d.dataset.theme||"";s.onchange=function(){if(s.value)d.dataset.theme=s.value;else delete d.dataset.theme;save("ab-theme",s.value)}}
 document.querySelectorAll("[data-fs-step]").forEach(function(b){b.onclick=function(){var i=K.indexOf(d.dataset.fs||"m")+(+b.dataset.fsStep);i=Math.max(0,Math.min(K.length-1,i));d.dataset.fs=K[i];save("ab-fs",K[i])}});
 var nb=document.getElementById("nav-toggle"),side=document.querySelector("nav.side");if(nb&&side){nb.onclick=function(){side.classList.toggle("open")}}
 var cur=side&&side.querySelector(".cur");if(cur)cur.scrollIntoView({block:"center"});
+})();</script><script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script><script>(function(){
+var cvs=document.getElementById("hero3d");if(!cvs)return;
+var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+if(!window.THREE){cvs.remove();return}
+var R;try{R=new THREE.WebGLRenderer({canvas:cvs,antialias:true,alpha:true})}catch(e){cvs.remove();return}
+R.setPixelRatio(Math.min(window.devicePixelRatio||1,2));R.outputEncoding=THREE.sRGBEncoding;
+var S=new THREE.Scene(),C=new THREE.PerspectiveCamera(34,1,.1,100);C.position.set(0,.6,11);
+var hemi=new THREE.HemisphereLight(0xdfe8ff,0x1a2030,.38),key=new THREE.DirectionalLight(0xffffff,1.0),
+ rimA=new THREE.PointLight(0x2f6fdf,3.2,16),rimB=new THREE.PointLight(0xff6a3d,1.8,16),fill=new THREE.DirectionalLight(0x9fb6ff,.35);
+key.position.set(5,6,8);fill.position.set(-6,2,4);rimA.position.set(-3.2,2.6,-2.2);rimB.position.set(3.2,1.2,-2.6);S.add(hemi,key,fill,rimA,rimB);
+var world=new THREE.Group();S.add(world);
+/* 柔光晕贴图：做发光部位的 bloom 感 */
+function glowTex(){var c=document.createElement("canvas");c.width=c.height=128;var g=c.getContext("2d"),r=g.createRadialGradient(64,64,0,64,64,64);
+ r.addColorStop(0,"rgba(255,255,255,1)");r.addColorStop(.25,"rgba(255,255,255,.55)");r.addColorStop(1,"rgba(255,255,255,0)");g.fillStyle=r;g.fillRect(0,0,128,128);return new THREE.CanvasTexture(c)}
+var GT=glowTex(),glows=[];
+function glow(parent,x,y,z,s,col){var m=new THREE.SpriteMaterial({map:GT,color:col||0xffffff,blending:THREE.AdditiveBlending,depthWrite:false,transparent:true,opacity:.85});
+ var sp=new THREE.Sprite(m);sp.position.set(x,y,z);sp.scale.set(s,s,1);parent.add(sp);glows.push(sp);return sp}
+/* 知识星球 */
+var planet=new THREE.Group();planet.position.set(.2,1.0,-4.5);world.add(planet);
+var core=new THREE.Mesh(new THREE.IcosahedronGeometry(2.4,1),new THREE.MeshBasicMaterial({wireframe:true,transparent:true,opacity:.32}));
+var shell=new THREE.Mesh(new THREE.IcosahedronGeometry(1.9,2),new THREE.MeshBasicMaterial({transparent:true,opacity:.07}));planet.add(core,shell);
+var ring=new THREE.Mesh(new THREE.TorusGeometry(3.3,.01,8,200),new THREE.MeshBasicMaterial({transparent:true,opacity:.3}));ring.rotation.x=1.36;ring.position.y=-.2;world.add(ring);
+var ring2=new THREE.Mesh(new THREE.TorusGeometry(3.9,.006,8,200),new THREE.MeshBasicMaterial({transparent:true,opacity:.18}));ring2.rotation.set(1.2,.3,0);ring2.position.y=.2;world.add(ring2);
+/* 材质 */
+var armor=new THREE.MeshStandardMaterial({color:0xdfe4ec,metalness:.3,roughness:.38}),
+ frame=new THREE.MeshStandardMaterial({color:0x2b303a,metalness:.75,roughness:.35}),
+ trim=new THREE.MeshStandardMaterial({color:0x2f6fdf,metalness:.4,roughness:.3}),
+ gold=new THREE.MeshStandardMaterial({color:0xf2c14e,metalness:.85,roughness:.25,emissive:0x5a3c00,emissiveIntensity:.4}),
+ energy=new THREE.MeshStandardMaterial({color:0x2f6fdf,emissive:0x2f6fdf,emissiveIntensity:2,metalness:0,roughness:.2}),
+ red=new THREE.MeshStandardMaterial({color:0xff3b3b,emissive:0xff2020,emissiveIntensity:1.6});
+/* 几何工具：挤出多边形（带倒角）、方截锥（棱角肢体） */
+function shp(a){var s=new THREE.Shape();s.moveTo(a[0],a[1]);for(var i=2;i<a.length;i+=2)s.lineTo(a[i],a[i+1]);s.closePath();return s}
+function ext(a,d,bv,m){var g=new THREE.ExtrudeGeometry(shp(a),{depth:d,bevelEnabled:true,bevelThickness:bv,bevelSize:bv,bevelSegments:2,curveSegments:1});g.center();return new THREE.Mesh(g,m)}
+function fr(rt,rb,h,m,sx,sz){var g=new THREE.CylinderGeometry(rt,rb,h,4,1);g.rotateY(Math.PI/4);var o=new THREE.Mesh(g,m);o.scale.set(sx||1,1,sz||1);return o}
+function bx(w,h,d,m){return new THREE.Mesh(new THREE.BoxGeometry(w,h,d),m)}
+function cy(r,h,m,seg){return new THREE.Mesh(new THREE.CylinderGeometry(r,r,h,seg||16),m)}
+function at(o,x,y,z,rx,ry,rz){o.position.set(x,y,z);o.rotation.set(rx||0,ry||0,rz||0);return o}
+var mech=new THREE.Group();world.add(mech);
+var body=new THREE.Group();mech.add(body);
+/* 腰与腰甲 */
+body.add(at(fr(.4,.33,.34,frame,1.35,.95),0,0,0));
+[-1,1].forEach(function(s){body.add(at(ext([-.16,.14,.16,.14,.12,-.22,-.12,-.22],.06,.02,armor),s*.21,-.2,.33,-.18,0,s*.05));
+ body.add(at(ext([-.08,.2,.08,.2,.1,-.24,-.06,-.2],.24,.02,armor),s*.5,-.12,0,0,0,s*.12))});
+body.add(at(bx(.12,.16,.06,red),0,-.05,.34));
+/* 腹部分节 */
+for(var i=0;i<3;i++)body.add(at(fr(.3-.02*i,.28-.02*i,.1,frame,1.45,1),0,.26+i*.12,0));
+/* 胸甲 */
+var chest=at(ext([-.78,.5,.78,.5,.66,-.18,.32,-.44,-.32,-.44,-.66,-.18],.74,.05,armor),0,1.02,0);body.add(chest);
+body.add(at(ext([-.34,.2,.34,.2,.22,-.2,-.22,-.2],.08,.02,frame),0,1.08,.44));
+body.add(at(ext([-.08,.12,.08,.12,0,-.14],.06,.01,energy),0,.84,.46));glow(body,0,.86,.6,.9);
+[-1,1].forEach(function(s){for(var k=0;k<3;k++)body.add(at(bx(.2,.035,.04,gold),s*.47,1.18-k*.07,.45,0,0,s*.12));
+ body.add(at(ext([-.12,.06,.12,.06,.16,-.06,-.16,-.06],.5,.02,trim),s*.56,1.46,0,0,0,-s*.08))});
+body.add(at(fr(.3,.36,.18,frame,1.3,1),0,1.6,0));
+/* 背包与推进器 */
+body.add(at(bx(.76,.66,.34,frame),0,1.05,-.5));
+var flames=[];[-1,1].forEach(function(s){var t=at(cy(.13,.36,frame,20),s*.24,.78,-.72,.35);body.add(t);
+ var f=new THREE.Mesh(new THREE.ConeGeometry(.1,.7,20,1,true),new THREE.MeshBasicMaterial({color:0x2f6fdf,transparent:true,opacity:.55,blending:THREE.AdditiveBlending,depthWrite:false}));
+ at(f,s*.24,.42,-.85,Math.PI+.35);body.add(f);flames.push({f:f,g:glow(body,s*.24,.5,-.85,.7)})});
+/* 头 */
+var head=new THREE.Group();head.position.set(0,1.74,.02);head.scale.setScalar(1.22);body.add(head);
+head.add(at(ext([-.25,.16,.25,.16,.3,-.03,.2,-.24,-.2,-.24,-.3,-.03],.52,.04,armor),0,.2,0));
+head.add(at(bx(.4,.2,.06,frame),0,.12,.27));
+var visor=at(bx(.38,.055,.03,energy),0,.17,.31);head.add(visor);var vg=glow(head,0,.17,.36,.75);
+head.add(at(fr(.1,.14,.1,frame,1.3,1),0,-.06,.16));
+[-1,1].forEach(function(s){head.add(at(ext([0,0,.46,.22,.42,.27,0,.07],.025,.008,gold),s*.24,.42,.27,0,0,s<0?Math.PI:0));
+ head.add(at(bx(.07,.2,.36,frame),s*.31,.12,0));head.add(at(bx(.02,.12,.18,energy),s*.35,.12,.02))});
+head.children.forEach(function(c){if(c.material===gold&&c.rotation.z===Math.PI){c.scale.y=-1;c.rotation.z=0;c.scale.x=-1}});
+head.add(at(new THREE.Mesh(new THREE.OctahedronGeometry(.05),red),0,.37,.3));glow(head,0,.37,.34,.25,0xff4040);
+/* 手臂 */
+function arm(s){var sh=new THREE.Group();sh.position.set(s*.98,1.36,0);body.add(sh);
+ sh.add(at(ext([-.24,.2,.24,.2,.3,0,.2,-.24,-.2,-.24,-.3,0],.62,.05,armor),0,.06,0,0,0,s*.22));
+ sh.add(at(bx(.36,.04,.64,trim),s*.04,.3,0,0,0,s*.22));
+ sh.add(at(fr(.17,.15,.46,frame),s*.06,-.36,0,0,0,s*.06));
+ var el=new THREE.Group();el.position.set(s*.08,-.64,0);sh.add(el);el.add(at(cy(.12,.24,frame),0,0,0,0,0,Math.PI/2));
+ el.add(at(fr(.2,.26,.62,armor,1,1.15),0,-.38,0));el.add(at(bx(.04,.4,.3,trim),s*.17,-.38,0));
+ el.add(at(bx(.22,.22,.24,frame),0,-.78,.02));return {sh:sh,el:el}}
+var AL=arm(-1),AR=arm(1);AL.sh.rotation.z=-.16;AR.sh.rotation.z=.16;AL.el.rotation.x=-.32;AR.el.rotation.x=-.22;
+/* 腿 */
+function leg(s){var hp=new THREE.Group();hp.position.set(s*.3,-.18,0);mech.add(hp);hp.rotation.z=s*.07;
+ hp.add(at(fr(.3,.25,.72,armor,1,1.15),0,-.42,0));hp.add(at(bx(.14,.5,.06,frame),0,-.42,.24));
+ var kn=new THREE.Group();kn.position.y=-.84;hp.add(kn);kn.add(at(cy(.13,.3,frame),0,0,0,0,0,Math.PI/2));
+ kn.add(at(ext([-.13,.16,.13,.16,.1,-.14,0,-.22,-.1,-.14],.1,.02,armor),0,0,.2,-.1));
+ kn.add(at(fr(.27,.4,.92,armor,1,1.3),0,-.54,0));kn.add(at(bx(.06,.56,.07,trim),s*.22,-.5,.25));kn.add(at(bx(.18,.3,.06,frame),0,-.36,.3,-.1));
+ kn.add(at(cy(.11,.12,frame),0,-1.04,0));
+ kn.add(at(ext([-.22,.07,.22,.07,.27,-.07,-.27,-.07],.66,.03,frame),0,-1.16,.14,Math.PI/2));kn.add(at(ext([-.16,.05,.16,.05,.2,-.05,-.2,-.05],.3,.02,armor),0,-1.06,.36,Math.PI/2-.35));return {hp:hp,kn:kn}}
+var LL=leg(-1),LR=leg(1);LL.kn.rotation.x=.06;LR.kn.rotation.x=.04;
+mech.position.y=.25;mech.scale.setScalar(.88);
+/* 节点与连线 */
+var N=13,nodes=[],nodeGeo=new THREE.OctahedronGeometry(.07),nodeMat=new THREE.MeshBasicMaterial();
+for(var i=0;i<N;i++){var m=new THREE.Mesh(nodeGeo,nodeMat);nodes.push({m:m,g:glow(world,0,0,0,.22),r:2.6+(i%3)*.75,s:.14+.06*((i*7)%5)/5,p:i/N*Math.PI*2,inc:.22+((i*5)%7)/7*.7,az:(i*2.4)%(Math.PI*2)});world.add(m)}
+var lineGeo=new THREE.BufferGeometry(),lp=new Float32Array(N*2*3*2);lineGeo.setAttribute("position",new THREE.BufferAttribute(lp,3));
+var lines=new THREE.LineSegments(lineGeo,new THREE.LineBasicMaterial({transparent:true,opacity:.16,blending:THREE.AdditiveBlending}));world.add(lines);
+var P=1100,pg=new THREE.BufferGeometry(),pp=new Float32Array(P*3);
+for(var k=0;k<P;k++){var u=Math.random()*2-1,t=Math.random()*Math.PI*2,rr=5+Math.random()*10,q=Math.sqrt(1-u*u);pp[k*3]=rr*q*Math.cos(t);pp[k*3+1]=rr*u;pp[k*3+2]=rr*q*Math.sin(t)-6}
+pg.setAttribute("position",new THREE.BufferAttribute(pp,3));
+var dust=new THREE.Points(pg,new THREE.PointsMaterial({size:.03,transparent:true,opacity:.45,depthWrite:false}));S.add(dust);
+/* 主题色 */
+function cv(n,d){var v=getComputedStyle(document.documentElement).getPropertyValue(n).trim();try{return new THREE.Color(v||d)}catch(e){return new THREE.Color(d)}}
+function theme(){var a=cv("--acc","#2f6fdf"),f=cv("--fg","#1f2328"),c=cv("--card","#ffffff"),b=cv("--bg","#fbfbfa");
+ [core.material,shell.material,ring.material,ring2.material,nodeMat,lines.material].forEach(function(m){m.color=a});
+ energy.color=a;energy.emissive=a;trim.color=a.clone().lerp(new THREE.Color(0x111111),.15);rimA.color=a;dust.material.color=f;
+ flames.forEach(function(o){o.f.material.color=a});glows.forEach(function(g){if(g.material.color.getHex()!==0xff4040)g.material.color=a});
+ var dark=b.getHSL({}).l<.4;armor.color=dark?new THREE.Color(0xc4cbd6):new THREE.Color(0xdfe4ec);frame.color=dark?new THREE.Color(0x1c2028):new THREE.Color(0x2b303a);draw()}
+new MutationObserver(theme).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",theme)}catch(e){}
+function size(){var w=cvs.clientWidth,h=cvs.clientHeight;if(!w||!h)return;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix();
+ world.position.x=w>1200?3.7:(w>900?3.2:(w>720?2.3:0));world.position.y=w>720?-.15:.1;C.fov=w>720?34:37;C.updateProjectionMatrix();draw()}
+var mx=0,my=0,tx=0,ty=0,T=0,visible=true,cx=new THREE.Vector3();
+addEventListener("pointermove",function(e){tx=(e.clientX/innerWidth-.5);ty=(e.clientY/innerHeight-.5)},{passive:true});
+function L(a,b,k){return a+(b-a)*k}
+function pose(t){var br=Math.sin(t*1.4);
+ body.position.y=br*.015;chest.scale.set(1+br*.006,1+br*.01,1);
+ head.rotation.y=L(head.rotation.y,mx*1.0+Math.sin(t*.45)*.28,.06);head.rotation.x=L(head.rotation.x,my*.35-.04,.06);
+ AL.el.rotation.x=-.32+br*.03;AR.el.rotation.x=-.22-br*.03;AL.sh.rotation.x=br*.02;AR.sh.rotation.x=-br*.02;
+ var p=.5+.5*Math.sin(t*2.4);energy.emissiveIntensity=1.4+1.4*p;vg.material.opacity=.5+.45*p;
+ flames.forEach(function(o,i){var fl=.85+.3*Math.sin(t*23+i*2)+.15*Math.sin(t*37+i);o.f.scale.set(1,fl,1);o.g.material.opacity=.45+.35*fl})}
+function place(t){mech.updateMatrixWorld(true);body.children[0].getWorldPosition(cx);world.worldToLocal(cx);cx.y+=1.0;var j=0;
+ for(var i=0;i<N;i++){var o=nodes[i],a=o.p+t*o.s,x=o.r*Math.cos(a),z=o.r*Math.sin(a),y=z*Math.sin(o.inc)+.5;z=z*Math.cos(o.inc);
+  var ca=Math.cos(o.az),sa=Math.sin(o.az),X=x*ca-z*sa,Z=x*sa+z*ca;o.m.position.set(X,y,Z);o.g.position.set(X,y,Z);o.m.rotation.y=t*2+i;
+  lp[j++]=cx.x;lp[j++]=cx.y;lp[j++]=cx.z;lp[j++]=X;lp[j++]=y;lp[j++]=Z;var nb=nodes[(i+1)%N].m.position;lp[j++]=X;lp[j++]=y;lp[j++]=Z;lp[j++]=nb.x;lp[j++]=nb.y;lp[j++]=nb.z}
+ lineGeo.attributes.position.needsUpdate=true}
+function draw(){pose(T);place(T);R.render(S,C)}
+function loop(){if(visible){T+=.016;mx=L(mx,tx,.035);my=L(my,ty,.035);
+ core.rotation.y+=.0018;core.rotation.x+=.0007;shell.rotation.y-=.001;ring.rotation.z+=.001;ring2.rotation.z-=.0007;dust.rotation.y+=.0003;
+ mech.rotation.y=-.42+mx*.32+Math.sin(T*.3)*.05;world.rotation.x=my*.08;C.position.x=mx*.55;C.position.y=.6-my*.3;C.lookAt(world.position.x*.3,.2,0);draw()}
+ requestAnimationFrame(loop)}
+addEventListener("resize",size);mech.rotation.y=-.42;theme();size();
+if("IntersectionObserver" in window){new IntersectionObserver(function(es){visible=es[0].isIntersecting}).observe(cvs)}
+if(!reduce)requestAnimationFrame(loop);
+})();</script><script>(function(){
+var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;if(reduce)return;
+if(matchMedia("(hover: hover)").matches){document.querySelectorAll(".card,.proj,.ab,.site").forEach(function(el){
+ el.addEventListener("pointermove",function(e){var r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+  el.style.transform="perspective(800px) rotateX("+(-y*9)+"deg) rotateY("+(x*11)+"deg) translateZ(8px)";el.style.setProperty("--mx",(x+.5)*100+"%");el.style.setProperty("--my",(y+.5)*100+"%")});
+ el.addEventListener("pointerleave",function(){el.style.transform=""})})}
+if("IntersectionObserver" in window){var els=document.querySelectorAll("main h2,main h3,.card,.proj,.ab,.site,.posts li,.lead");
+ var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){var d=en.target;setTimeout(function(){d.classList.add("in");setTimeout(function(){d.classList.remove("rv","in")},800)},(d.dataset.i%6)*60);io.unobserve(d)}})},{rootMargin:"0px 0px -6% 0px"});
+ els.forEach(function(e,i){e.dataset.i=i;e.classList.add("rv");io.observe(e)})}
 })();</script>
 </body></html>
