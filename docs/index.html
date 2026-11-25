@@ -206,7 +206,7 @@ add(body,at(ext([-.07,.4,.07,.4,.09,-.3,0,-.4,-.09,-.3],.12,.015,armor),0,1.02,.
 add(body,at(ext([-.05,.08,.05,.08,0,-.1],.04,.01,energy),0,.86,.52));glow(body,0,.86,.58,.42);
 /* 领口与颈 */
 add(body,at(ext([-.42,.08,.42,.08,.34,-.08,-.34,-.08],.5,.02,armor),0,1.5,-.02));
-add(body,at(cy(.12,.2,frame),0,1.62,0));
+add(body,at(cy(.12,.1,frame),0,1.58,0));
 /* 背包：两支光剑柄 + 两个推进器喷口 */
 add(body,at(ext([-.36,.32,.36,.32,.4,-.2,.24,-.36,-.24,-.36,-.4,-.2],.3,.03,frame),0,1.05,-.52));
 add(body,at(bx(.5,.08,.06,trim),0,1.28,-.69));
@@ -217,7 +217,7 @@ var flames=[];[-1,1].forEach(function(s){
  var f=new THREE.Mesh(new THREE.ConeGeometry(.11,.8,24,1,true),new THREE.MeshBasicMaterial({color:0x2f6fdf,transparent:true,opacity:.55,blending:THREE.AdditiveBlending,depthWrite:false}));
  at(f,s*.2,.32,-.88,Math.PI+.3);body.add(f);flames.push({f:f,g:glow(body,s*.2,.5,-.84,.7)})});
 /* 头：头盔 + 横向发光面罩 + 面甲与红下巴 + 金色 V 角 + 额头红色感应器 + 耳部模块 */
-var head=new THREE.Group();head.position.set(0,1.8,.03);head.scale.setScalar(1.18);body.add(head);
+var head=new THREE.Group();head.position.set(0,1.66,.05);head.scale.setScalar(1.18);body.add(head);
 add(head,at(ext([-.21,.2,.21,.2,.26,.04,.21,-.1,-.21,-.1,-.26,.04],.44,.03,armor),0,.18,-.02));
 add(head,at(bx(.06,.05,.44,trim),0,.405,-.02));
 add(head,at(bx(.36,.17,.06,joint),0,.12,.22));
